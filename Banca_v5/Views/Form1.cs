@@ -11,6 +11,7 @@ using Banca_v5.Views;
 
 using System.Drawing.Text;
 using Banca_v5.Models;
+using System.Diagnostics;
 
 namespace Banca_v5
 {
@@ -27,6 +28,13 @@ namespace Banca_v5
         
         public WelcomeForm()
         {
+            Trace.Listeners.Add(new TextWriterTraceListener("yourlog.log"));
+            Trace.AutoFlush = true;
+            Trace.Indent();
+            Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
+            Trace.WriteLine("Entering Main");
+            
+            
             InitializeComponent();
 
             /*Initializare culori*/
@@ -44,6 +52,11 @@ namespace Banca_v5
             label4.ForeColor = culoare2;
 
             lblNuAmCont.ForeColor = culoare1;
+
+            Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
+            Trace.WriteLine("Exiting Main");
+            Trace.Unindent();
+            Trace.Flush();
         }
 
         private void lblNuAmCont_Click(object sender, EventArgs e)

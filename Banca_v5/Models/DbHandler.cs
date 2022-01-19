@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Diagnostics;
 
 namespace Banca_v5.Models
 {
@@ -14,14 +15,21 @@ namespace Banca_v5.Models
 
         public bool CreareUtilizator(int idcont, string nume, string prenume, string email, string username, string parola)
         {
+            Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
+            Trace.WriteLine("Metoda creare utilizator a fost apelata.");
+
             string parola_hashuita = Hash.Hash_SHA1(parola);
 
             var res = (from u in utiliz.Utilizatori
                        where u.UserName.Equals(username)
                        select u).ToList();
 
-            if (res.Count() > 0) //Utilizator existent
+            if (res.Count() > 0)
+            {
+                Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
+                Trace.WriteLine("Acest username este deja folosit.");
                 return false;
+            }
 
             Utilizator utilizator = new Utilizator();
             utilizator.IdCont = idcont;
@@ -34,6 +42,8 @@ namespace Banca_v5.Models
             utiliz.Utilizatori.Add(utilizator);
             utiliz.SaveChanges();
 
+            Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
+            Trace.WriteLine("Utilizatorul a fost creat.");
             return true;
         }
 
@@ -64,6 +74,18 @@ namespace Banca_v5.Models
             tranzactie.IdContDestinatar = idcontdestinatar;
             tranzactie.Suma = suma;
             tranzactie.Moneda = moneda;
+
+            return true;
+        }
+
+        public bool VerificareDateUtilizator(string username, string parola)
+        {
+            var res = (from u in utiliz.Utilizatori
+                       where u.UserName.Equals(username) && u.Parola.Equals(parola)
+                       select u).ToList();
+
+            if (res.Count() == 0)
+                return false;
 
             return true;
         }
