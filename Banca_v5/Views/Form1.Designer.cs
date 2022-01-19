@@ -32,10 +32,10 @@ namespace Banca_v5
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WelcomeForm));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtBoxUsername = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtBoxParola = new System.Windows.Forms.TextBox();
             this.btnAutentificare = new System.Windows.Forms.Button();
             this.lblNuAmCont = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -46,7 +46,7 @@ namespace Banca_v5
             this.label1.Font = new System.Drawing.Font("Impact", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(112, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(281, 42);
+            this.label1.Size = new System.Drawing.Size(274, 41);
             this.label1.TabIndex = 0;
             this.label1.Text = "Bun venit la banca!";
             // 
@@ -60,12 +60,12 @@ namespace Banca_v5
             this.label2.TabIndex = 1;
             this.label2.Text = "Introdu datele pentru autentificare.";
             // 
-            // textBox1
+            // txtBoxUsername
             // 
-            this.textBox1.Location = new System.Drawing.Point(112, 192);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(224, 30);
-            this.textBox1.TabIndex = 2;
+            this.txtBoxUsername.Location = new System.Drawing.Point(112, 192);
+            this.txtBoxUsername.Name = "txtBoxUsername";
+            this.txtBoxUsername.Size = new System.Drawing.Size(224, 30);
+            this.txtBoxUsername.TabIndex = 2;
             // 
             // label3
             // 
@@ -87,13 +87,13 @@ namespace Banca_v5
             this.label4.TabIndex = 5;
             this.label4.Text = "Parola";
             // 
-            // textBox2
+            // txtBoxParola
             // 
-            this.textBox2.Location = new System.Drawing.Point(112, 288);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(224, 30);
-            this.textBox2.TabIndex = 4;
-            this.textBox2.UseSystemPasswordChar = true;
+            this.txtBoxParola.Location = new System.Drawing.Point(112, 288);
+            this.txtBoxParola.Name = "txtBoxParola";
+            this.txtBoxParola.Size = new System.Drawing.Size(224, 30);
+            this.txtBoxParola.TabIndex = 4;
+            this.txtBoxParola.UseSystemPasswordChar = true;
             // 
             // btnAutentificare
             // 
@@ -129,9 +129,9 @@ namespace Banca_v5
             this.Controls.Add(this.lblNuAmCont);
             this.Controls.Add(this.btnAutentificare);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtBoxParola);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtBoxUsername);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -151,10 +151,10 @@ namespace Banca_v5
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtBoxUsername;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtBoxParola;
         private System.Windows.Forms.Button btnAutentificare;
         private System.Windows.Forms.Label lblNuAmCont;
     }
