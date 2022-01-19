@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 using Banca_v5.Models;
 using Banca_v5.Views;
+using System.Diagnostics;
 
 namespace Banca_v5.Views
 {
@@ -25,6 +26,9 @@ namespace Banca_v5.Views
 
         public InregistrareForm()
         {
+            Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
+            Trace.WriteLine("Initializare formular inregistrare.");
+
             InitializeComponent();
 
             /*Initializare culori*/
@@ -88,6 +92,12 @@ namespace Banca_v5.Views
                     btnInregistrare.Enabled = true;
                 }
             }
+        }
+
+        private void InregistrareForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
+            Trace.WriteLine("Iesire formular inregistrare.");
         }
     }
 }
