@@ -20,7 +20,7 @@ namespace Banca_v5.Models
                        where u.UserName.Equals(username)
                        select u).ToList();
 
-            if (res.Count() > 0)
+            if (res.Count() > 0) //Utilizator existent
                 return false;
 
             Utilizator utilizator = new Utilizator();
@@ -71,17 +71,6 @@ namespace Banca_v5.Models
             return true;
         }
 
-        public bool VerificareDateUtilizator(string username, string parola)
-        {
-            var res = (from u in utiliz.Utilizatori
-                       where u.UserName.Equals(username) && u.Parola.Equals(parola)
-                       select u).ToList();
-
-            if (res.Count() == 0)
-                return false;
-
-            return true;
-        }
 
 
 
