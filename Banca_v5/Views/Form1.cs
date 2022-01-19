@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Banca_v5.Views;
 
 using System.Drawing.Text;
 using Banca_v5.Models;
@@ -20,6 +21,8 @@ namespace Banca_v5
         private static Color culoare3 = Color.FromArgb(168, 218, 220);
         private static Color culoare4 = Color.FromArgb(69, 123, 157);
         private static Color culoare5 = Color.FromArgb(29, 53, 87);
+
+        private DbHandler dbHandler = new DbHandler();
 
         public WelcomeForm()
         {
@@ -44,7 +47,8 @@ namespace Banca_v5
 
         private void lblNuAmCont_Click(object sender, EventArgs e)
         {
-
+            InregistrareForm inregistrareForm = new InregistrareForm();
+            inregistrareForm.ShowDialog();
         }
 
         private void lblNuAmCont_MouseHover(object sender, EventArgs e)
@@ -57,14 +61,41 @@ namespace Banca_v5
             lblNuAmCont.ForeColor = culoare1;
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private async void btnAutentificare_Click(object sender, EventArgs e)
         {
+            /*Verificare input-uri*/
+            if (txtBoxParola.TextLength < 3 || txtBoxUsername.TextLength < 3)
+            {
+                MessageBox.Show("Ai introdus prea putine caractere!", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                MessageBox.Show("Acum se verifica datele.. Asteapta te rog.", "Rulare..", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                btnAutentificare.Enabled = false;
 
-        }
+                string username, parola;
 
-        private void btnAutentificare_Click(object sender, EventArgs e)
-        {
-            
+                username = txtBoxUsername.Text;
+                parola = txtBoxParola.Text;
+
+                Task<bool> autentificareTask = new Task<bool>(() => dbHandler.Autentificare(username, parola));
+                autentificareTask.Start();
+                bool rezultat = await autentificareTask;
+
+                if (rezultat)
+                {
+                    MessageBox.Show("Autentificare cu succes!", "Succes", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Visible = false;
+                }
+                else
+                {
+                    MessageBox.Show("Numele de utilizator sau parola sunt gresite.", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    txtBoxParola.Clear();
+                    txtBoxUsername.Clear();
+
+                    btnAutentificare.Enabled = true;
+                }
+            }
         }
     }
 }
