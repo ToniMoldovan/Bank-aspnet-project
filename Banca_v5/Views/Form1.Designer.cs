@@ -46,7 +46,7 @@ namespace Banca_v5
             this.label1.Font = new System.Drawing.Font("Impact", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(112, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(281, 42);
+            this.label1.Size = new System.Drawing.Size(274, 41);
             this.label1.TabIndex = 0;
             this.label1.Text = "Bun venit la banca!";
             // 
@@ -66,6 +66,7 @@ namespace Banca_v5
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(224, 30);
             this.textBox1.TabIndex = 2;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label3
             // 
@@ -105,6 +106,7 @@ namespace Banca_v5
             this.btnAutentificare.TabIndex = 6;
             this.btnAutentificare.Text = "Autentificare";
             this.btnAutentificare.UseVisualStyleBackColor = true;
+            this.btnAutentificare.Click += new System.EventHandler(this.btnAutentificare_Click);
             // 
             // lblNuAmCont
             // 

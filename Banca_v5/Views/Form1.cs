@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using System.Drawing.Text;
+using Banca_v5.Models;
 
 namespace Banca_v5
 {
@@ -54,6 +55,16 @@ namespace Banca_v5
         private void lblNuAmCont_MouseLeave(object sender, EventArgs e)
         {
             lblNuAmCont.ForeColor = culoare1;
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAutentificare_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
