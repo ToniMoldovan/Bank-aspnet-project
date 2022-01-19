@@ -9,11 +9,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using System.Drawing.Text;
+using Banca_v5.Models;
 
 namespace Banca_v5
 {
     public partial class WelcomeForm : Form
     {
+        DbHandler dbHandler = new DbHandler();
+
         private static Color culoare1 = Color.FromArgb(230, 57, 70);
         private static Color culoare2 = Color.FromArgb(241, 250, 238);
         private static Color culoare3 = Color.FromArgb(168, 218, 220);
@@ -54,6 +57,34 @@ namespace Banca_v5
         private void lblNuAmCont_MouseLeave(object sender, EventArgs e)
         {
             lblNuAmCont.ForeColor = culoare1;
+        }
+
+        private async void btnAutentificare_Click(object sender, EventArgs e)
+        {
+            String username, parola;
+
+            username = textBox1.Text;
+            parola = textBox2.Text;
+
+            Task<bool> task = new Task<bool>(() => dbHandler.VerificareDateUtilizator(username, parola));
+            
+            task.Start();
+
+            bool result = await task;
+
+            if(result)
+            {
+                Console.WriteLine("Logare cu succes!");
+                this.Hide();
+                //AdministrareMagazin Magazin = new AdministrareMagazin();
+                //Magazin.Closed += (s, args) => this.Close();
+                //Magazin.ShowDialog();
+            }
+            else
+            {
+                Console.WriteLine("Cont sau parola gresita sau inexistenta!");
+            }
+
         }
     }
 }
