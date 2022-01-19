@@ -55,7 +55,7 @@ namespace Banca_v5
             lblNuAmCont.ForeColor = culoare1;
 
             Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
-            Trace.WriteLine("Exiting Main");
+            Trace.WriteLine("Exiting Main\n");
             Trace.Unindent();
             Trace.Flush();
         }
