@@ -14,6 +14,8 @@ namespace Banca_v5.Models
 
         public bool CreareUtilizator(int idcont, string nume, string prenume, string email, string username, string parola)
         {
+            string parola_hashuita = Hash.Hash_SHA1(parola);
+
             var res = (from u in utiliz.Utilizatori
                        where u.UserName.Equals(username)
                        select u).ToList();
@@ -27,13 +29,16 @@ namespace Banca_v5.Models
             utilizator.Prenume = prenume;
             utilizator.Email = email;
             utilizator.UserName = username;
-            utilizator.Parola = parola;
+            utilizator.Parola = parola_hashuita;
 
             utiliz.Utilizatori.Add(utilizator);
             utiliz.SaveChanges();
 
             return true;
         }
+
+
+
 
         public bool CreareContBancar(int idpersoana, string iban, int pin, double suma, string moneda)
         {
@@ -77,5 +82,37 @@ namespace Banca_v5.Models
 
             return true;
         }
+
+
+
+        public bool Autentificare(string username, string parola)
+        {
+            string parola_hashuita = Hash.Hash_SHA1(parola);
+
+            var res = (from u in utiliz.Utilizatori
+                       where u.UserName == username && u.Parola == parola_hashuita
+                       select u).FirstOrDefault();
+
+            
+
+            if(res == null)
+            {
+                Console.WriteLine("username-ul sau parola au fost gresite(din functia care verifica parola si username-ul)");
+                return false;
+            }
+            else
+            {
+                Console.WriteLine("username-ul si parola au fost gasite si verificate cu succes");
+                return true;
+            }
+
+            
+        }
+
+
+
+
+
+
     }
 }
