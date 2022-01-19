@@ -59,32 +59,14 @@ namespace Banca_v5
             lblNuAmCont.ForeColor = culoare1;
         }
 
-        private async void btnAutentificare_Click(object sender, EventArgs e)
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            String username, parola;
 
-            username = textBox1.Text;
-            parola = textBox2.Text;
+        }
 
-            Task<bool> task = new Task<bool>(() => dbHandler.VerificareDateUtilizator(username, parola));
+        private void btnAutentificare_Click(object sender, EventArgs e)
+        {
             
-            task.Start();
-
-            bool result = await task;
-
-            if(result)
-            {
-                Console.WriteLine("Logare cu succes!");
-                this.Hide();
-                //AdministrareMagazin Magazin = new AdministrareMagazin();
-                //Magazin.Closed += (s, args) => this.Close();
-                //Magazin.ShowDialog();
-            }
-            else
-            {
-                Console.WriteLine("Cont sau parola gresita sau inexistenta!");
-            }
-
         }
     }
 }
