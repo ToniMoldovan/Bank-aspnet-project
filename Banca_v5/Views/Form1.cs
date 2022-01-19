@@ -126,7 +126,7 @@ namespace Banca_v5
         private void WelcomeForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
-            Trace.WriteLine("Iesire formular autentificare.");
+            Trace.WriteLine("Iesire form autentificare.");
             Trace.Flush();
         }
     }
