@@ -12,6 +12,7 @@ using Banca_v5.Views;
 using System.Drawing.Text;
 using Banca_v5.Models;
 using System.Diagnostics;
+using System.IO;
 
 namespace Banca_v5
 {
@@ -28,6 +29,7 @@ namespace Banca_v5
         
         public WelcomeForm()
         {
+            File.Delete("yourlog.log");
             Trace.Listeners.Add(new TextWriterTraceListener("yourlog.log"));
             Trace.AutoFlush = true;
             Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
@@ -53,7 +55,8 @@ namespace Banca_v5
             lblNuAmCont.ForeColor = culoare1;
 
             Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
-            Trace.WriteLine("Exiting Main\n");
+            Trace.WriteLine("Exiting Main");
+            Trace.Unindent();
             Trace.Flush();
         }
 
@@ -97,18 +100,34 @@ namespace Banca_v5
 
                 if (rezultat)
                 {
+                    Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
+                    Trace.WriteLine($"Autentificare cu succes {username}.");
                     MessageBox.Show("Autentificare cu succes!", "Succes", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Visible = false;
                 }
                 else
                 {
-                    MessageBox.Show("Numele de utilizator sau parola sunt gresite.", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
+                    Trace.WriteLine("Eroare.Numele de utilizator sau parola sunt gresite.");
+                    MessageBox.Show($"Numele de utilizator {username} sau parola sunt gresite.", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txtBoxParola.Clear();
                     txtBoxUsername.Clear();
 
+                    // deschidere fereastra dupa form autentificare
+
                     btnAutentificare.Enabled = true;
+                    Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
+                    Trace.WriteLine("Iesire formular autentificare.");
+                    Trace.Flush();
                 }
             }
+        }
+
+        private void WelcomeForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
+            Trace.WriteLine("Iesire formular autentificare.");
+            Trace.Flush();
         }
     }
 }
