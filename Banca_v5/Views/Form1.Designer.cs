@@ -105,6 +105,7 @@ namespace Banca_v5
             this.btnAutentificare.TabIndex = 6;
             this.btnAutentificare.Text = "Autentificare";
             this.btnAutentificare.UseVisualStyleBackColor = true;
+            this.btnAutentificare.Click += new System.EventHandler(this.btnAutentificare_Click);
             // 
             // lblNuAmCont
             // 
