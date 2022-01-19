@@ -97,7 +97,7 @@ namespace Banca_v5.Models
 
             if(res == null)
             {
-                Console.WriteLine("username-ul sau parola au fost gresite(din functia care verifica parola si username-ul)");
+                Console.WriteLine("username-ul sau parola nu au fost gresite(din functia care verifica parola si username-ul)");
                 return false;
             }
             else
