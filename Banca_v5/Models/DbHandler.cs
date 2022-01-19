@@ -43,12 +43,15 @@ namespace Banca_v5.Models
             utiliz.SaveChanges();
 
             Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
-            Trace.WriteLine("Utilizatorul a fost creat.");
+            Trace.WriteLine($"Utilizatorul {username} a fost creat.");
             return true;
         }
 
         public bool CreareContBancar(int idpersoana, string iban, int pin, double suma, string moneda)
         {
+            Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
+            Trace.WriteLine("Metoda creare cont bancar a fost apelata.");
+
             ContBancar contBancar = new ContBancar();
             contBancar.IdPersoana = idpersoana;
             contBancar.IBAN = iban;
@@ -56,11 +59,16 @@ namespace Banca_v5.Models
             contBancar.Suma = suma;
             contBancar.Moneda = moneda;
 
+            Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
+            Trace.WriteLine($"Contul bancar cu IBAN-ul:{iban} a fost creat.");
             return true;
         }
 
         public bool CreareTranzactie(int idcontexpeditor, int idcontdestinatar, double suma, string moneda)
-        {            
+        {
+            Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
+            Trace.WriteLine("Metoda creare tranzactie a fost apelata.");
+
             var res = (from c in cntBnc.ConturiBancare
                        where c.IdPersoana.Equals(idcontexpeditor)
                        select c).ToList();
