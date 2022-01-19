@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Security.Cryptography;
+using System.Text;
 using System.Threading.Tasks;
 
-namespace Banca_v5
+namespace Banca_v5.Models
 {
     class Hash
     {
@@ -26,7 +26,3 @@ namespace Banca_v5
         }
     }
 }
-
-
-
-
