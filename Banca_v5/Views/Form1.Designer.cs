@@ -62,13 +62,12 @@ namespace Banca_v5
             // 
             // txtBoxUsername
             // 
+
             this.txtBoxUsername.Location = new System.Drawing.Point(112, 192);
             this.txtBoxUsername.Name = "txtBoxUsername";
             this.txtBoxUsername.Size = new System.Drawing.Size(224, 30);
             this.txtBoxUsername.TabIndex = 2;
-            // 
-            // label3
-            // 
+
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(112, 160);
@@ -105,6 +104,7 @@ namespace Banca_v5
             this.btnAutentificare.TabIndex = 6;
             this.btnAutentificare.Text = "Autentificare";
             this.btnAutentificare.UseVisualStyleBackColor = true;
+            this.btnAutentificare.Click += new System.EventHandler(this.btnAutentificare_Click);
             // 
             // lblNuAmCont
             // 
