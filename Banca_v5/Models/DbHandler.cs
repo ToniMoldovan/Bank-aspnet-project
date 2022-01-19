@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Diagnostics;
 
 namespace Banca_v5.Models
 {
@@ -14,6 +15,9 @@ namespace Banca_v5.Models
 
         public bool CreareUtilizator(int idcont, string nume, string prenume, string email, string username, string parola)
         {
+            Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
+            Trace.WriteLine("Metoda creare utilizator a fost apelata.");
+
             string parola_hashuita = Hash.Hash_SHA1(parola);
 
             var res = (from u in utiliz.Utilizatori
@@ -21,7 +25,11 @@ namespace Banca_v5.Models
                        select u).ToList();
 
             if (res.Count() > 0)
+            {
+                Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
+                Trace.WriteLine("Acest username este deja folosit.");
                 return false;
+            }
 
             Utilizator utilizator = new Utilizator();
             utilizator.IdCont = idcont;
@@ -34,11 +42,10 @@ namespace Banca_v5.Models
             utiliz.Utilizatori.Add(utilizator);
             utiliz.SaveChanges();
 
+            Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
+            Trace.WriteLine("Utilizatorul a fost creat.");
             return true;
         }
-
-
-
 
         public bool CreareContBancar(int idpersoana, string iban, int pin, double suma, string moneda)
         {
@@ -83,17 +90,13 @@ namespace Banca_v5.Models
             return true;
         }
 
-
-
         public bool Autentificare(string username, string parola)
         {
             string parola_hashuita = Hash.Hash_SHA1(parola);
 
             var res = (from u in utiliz.Utilizatori
                        where u.UserName == username && u.Parola == parola_hashuita
-                       select u).FirstOrDefault();
-
-            
+                       select u).FirstOrDefault();            
 
             if(res == null)
             {
@@ -104,15 +107,7 @@ namespace Banca_v5.Models
             {
                 Console.WriteLine("username-ul si parola au fost gasite si verificate cu succes");
                 return true;
-            }
-
-            
+            }            
         }
-
-
-
-
-
-
     }
 }

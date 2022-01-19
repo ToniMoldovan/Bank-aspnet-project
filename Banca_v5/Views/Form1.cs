@@ -7,22 +7,34 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Banca_v5.Views;
 
 using System.Drawing.Text;
 using Banca_v5.Models;
+using System.Diagnostics;
 
 namespace Banca_v5
 {
     public partial class WelcomeForm : Form
     {
+        DbHandler dbHandler = new DbHandler();
+
         private static Color culoare1 = Color.FromArgb(230, 57, 70);
         private static Color culoare2 = Color.FromArgb(241, 250, 238);
         private static Color culoare3 = Color.FromArgb(168, 218, 220);
         private static Color culoare4 = Color.FromArgb(69, 123, 157);
         private static Color culoare5 = Color.FromArgb(29, 53, 87);
 
+        
         public WelcomeForm()
         {
+            Trace.Listeners.Add(new TextWriterTraceListener("yourlog.log"));
+            Trace.AutoFlush = true;
+            Trace.Indent();
+            Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
+            Trace.WriteLine("Entering Main");
+            
+            
             InitializeComponent();
 
             /*Initializare culori*/
@@ -40,11 +52,17 @@ namespace Banca_v5
             label4.ForeColor = culoare2;
 
             lblNuAmCont.ForeColor = culoare1;
+
+            Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
+            Trace.WriteLine("Exiting Main");
+            Trace.Unindent();
+            Trace.Flush();
         }
 
         private void lblNuAmCont_Click(object sender, EventArgs e)
         {
-
+            InregistrareForm inregistrareForm = new InregistrareForm();
+            inregistrareForm.ShowDialog();
         }
 
         private void lblNuAmCont_MouseHover(object sender, EventArgs e)
@@ -57,14 +75,41 @@ namespace Banca_v5
             lblNuAmCont.ForeColor = culoare1;
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private async void btnAutentificare_Click(object sender, EventArgs e)
         {
+            /*Verificare input-uri*/
+            if (txtBoxParola.TextLength < 3 || txtBoxUsername.TextLength < 3)
+            {
+                MessageBox.Show("Ai introdus prea putine caractere!", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                MessageBox.Show("Acum se verifica datele.. Asteapta te rog.", "Rulare..", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                btnAutentificare.Enabled = false;
 
-        }
+                string username, parola;
 
-        private void btnAutentificare_Click(object sender, EventArgs e)
-        {
-            
+                username = txtBoxUsername.Text;
+                parola = txtBoxParola.Text;
+
+                Task<bool> autentificareTask = new Task<bool>(() => dbHandler.Autentificare(username, parola));
+                autentificareTask.Start();
+                bool rezultat = await autentificareTask;
+
+                if (rezultat)
+                {
+                    MessageBox.Show("Autentificare cu succes!", "Succes", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Visible = false;
+                }
+                else
+                {
+                    MessageBox.Show("Numele de utilizator sau parola sunt gresite.", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    txtBoxParola.Clear();
+                    txtBoxUsername.Clear();
+
+                    btnAutentificare.Enabled = true;
+                }
+            }
         }
     }
 }
