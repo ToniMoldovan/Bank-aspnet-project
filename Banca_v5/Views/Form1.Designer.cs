@@ -62,12 +62,14 @@ namespace Banca_v5
             // 
             // txtBoxUsername
             // 
-
             this.txtBoxUsername.Location = new System.Drawing.Point(112, 192);
+            this.txtBoxUsername.MaxLength = 30;
             this.txtBoxUsername.Name = "txtBoxUsername";
             this.txtBoxUsername.Size = new System.Drawing.Size(224, 30);
             this.txtBoxUsername.TabIndex = 2;
-
+            // 
+            // label3
+            // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(112, 160);
@@ -89,6 +91,7 @@ namespace Banca_v5
             // txtBoxParola
             // 
             this.txtBoxParola.Location = new System.Drawing.Point(112, 288);
+            this.txtBoxParola.MaxLength = 30;
             this.txtBoxParola.Name = "txtBoxParola";
             this.txtBoxParola.Size = new System.Drawing.Size(224, 30);
             this.txtBoxParola.TabIndex = 4;
