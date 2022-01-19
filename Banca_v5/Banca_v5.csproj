@@ -59,7 +59,7 @@
     <Compile Include="Models\ContBancar.cs" />
     <Compile Include="Models\Tranzactie.cs" />
     <Compile Include="Models\Utilizator.cs" />
-    <Compile Include="Hash.cs" />
+    <Compile Include="Models\Hash.cs" />
     <Compile Include="Views\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
