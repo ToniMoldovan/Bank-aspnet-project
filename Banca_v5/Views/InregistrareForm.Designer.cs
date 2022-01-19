@@ -69,6 +69,7 @@ namespace Banca_v5.Views
             // txtBoxParola
             // 
             this.txtBoxParola.Location = new System.Drawing.Point(112, 432);
+            this.txtBoxParola.MaxLength = 30;
             this.txtBoxParola.Name = "txtBoxParola";
             this.txtBoxParola.Size = new System.Drawing.Size(224, 30);
             this.txtBoxParola.TabIndex = 12;
@@ -87,6 +88,7 @@ namespace Banca_v5.Views
             // txtBoxNume
             // 
             this.txtBoxNume.Location = new System.Drawing.Point(112, 112);
+            this.txtBoxNume.MaxLength = 30;
             this.txtBoxNume.Name = "txtBoxNume";
             this.txtBoxNume.Size = new System.Drawing.Size(224, 30);
             this.txtBoxNume.TabIndex = 10;
@@ -124,6 +126,7 @@ namespace Banca_v5.Views
             // txtBoxPrenume
             // 
             this.txtBoxPrenume.Location = new System.Drawing.Point(112, 192);
+            this.txtBoxPrenume.MaxLength = 30;
             this.txtBoxPrenume.Name = "txtBoxPrenume";
             this.txtBoxPrenume.Size = new System.Drawing.Size(224, 30);
             this.txtBoxPrenume.TabIndex = 18;
@@ -131,6 +134,7 @@ namespace Banca_v5.Views
             // txtBoxUsername
             // 
             this.txtBoxUsername.Location = new System.Drawing.Point(112, 352);
+            this.txtBoxUsername.MaxLength = 30;
             this.txtBoxUsername.Name = "txtBoxUsername";
             this.txtBoxUsername.Size = new System.Drawing.Size(224, 30);
             this.txtBoxUsername.TabIndex = 19;
@@ -138,6 +142,7 @@ namespace Banca_v5.Views
             // txtBoxEmail
             // 
             this.txtBoxEmail.Location = new System.Drawing.Point(112, 272);
+            this.txtBoxEmail.MaxLength = 30;
             this.txtBoxEmail.Name = "txtBoxEmail";
             this.txtBoxEmail.Size = new System.Drawing.Size(224, 30);
             this.txtBoxEmail.TabIndex = 21;
@@ -175,6 +180,7 @@ namespace Banca_v5.Views
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.Name = "InregistrareForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inregistrare";
             this.ResumeLayout(false);
             this.PerformLayout();
