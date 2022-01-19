@@ -33,7 +33,7 @@ namespace Banca_v5
             Trace.Listeners.Add(new TextWriterTraceListener("yourlog.log"));
             Trace.AutoFlush = true;
             Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
-            Trace.WriteLine("Initializare formular autentificare.");
+            Trace.WriteLine("Entering Main\n");
             
             
             InitializeComponent();
@@ -53,6 +53,11 @@ namespace Banca_v5
             label4.ForeColor = culoare2;
 
             lblNuAmCont.ForeColor = culoare1;
+
+            Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
+            Trace.WriteLine("Exiting Main\n");
+            Trace.Unindent();
+            Trace.Flush();
         }
 
         private void lblNuAmCont_Click(object sender, EventArgs e)
@@ -76,6 +81,7 @@ namespace Banca_v5
             /*Verificare input-uri*/
             if (txtBoxParola.TextLength < 3 || txtBoxUsername.TextLength < 3)
             {
+
                 MessageBox.Show("Ai introdus prea putine caractere!", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
@@ -120,7 +126,7 @@ namespace Banca_v5
         private void WelcomeForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
-            Trace.WriteLine("Iesire formular autentificare.");
+            Trace.WriteLine("Iesire form autentificare.");
             Trace.Flush();
         }
     }
