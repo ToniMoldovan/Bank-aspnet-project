@@ -24,8 +24,7 @@ namespace Banca_v5
         private static Color culoare4 = Color.FromArgb(69, 123, 157);
         private static Color culoare5 = Color.FromArgb(29, 53, 87);
 
-        private DbHandler dbHandler = new DbHandler();
-
+        
         public WelcomeForm()
         {
             InitializeComponent();

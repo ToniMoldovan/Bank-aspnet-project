@@ -37,9 +37,6 @@ namespace Banca_v5.Models
             return true;
         }
 
-
-
-
         public bool CreareContBancar(int idpersoana, string iban, int pin, double suma, string moneda)
         {
             ContBancar contBancar = new ContBancar();
@@ -71,18 +68,13 @@ namespace Banca_v5.Models
             return true;
         }
 
-
-
-
         public bool Autentificare(string username, string parola)
         {
             string parola_hashuita = Hash.Hash_SHA1(parola);
 
             var res = (from u in utiliz.Utilizatori
                        where u.UserName == username && u.Parola == parola_hashuita
-                       select u).FirstOrDefault();
-
-            
+                       select u).FirstOrDefault();            
 
             if(res == null)
             {
@@ -93,15 +85,7 @@ namespace Banca_v5.Models
             {
                 Console.WriteLine("username-ul si parola au fost gasite si verificate cu succes");
                 return true;
-            }
-
-            
+            }            
         }
-
-
-
-
-
-
     }
 }
