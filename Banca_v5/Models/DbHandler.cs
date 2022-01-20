@@ -17,7 +17,7 @@ namespace Banca_v5.Models
         public bool CreareUtilizator(int idcont, string nume, string prenume, string email, string username, string parola)
         {
             Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
-            Trace.WriteLine("Metoda creare utilizator a fost apelata.");
+            Trace.WriteLine("Metoda creare utilizator a fost apelata.\n");
 
             string parola_hashuita = Hash.Hash_SHA1(parola);
 
@@ -28,7 +28,7 @@ namespace Banca_v5.Models
             if (res.Count() > 0)
             {
                 Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
-                Trace.WriteLine("Acest username este deja folosit.");
+                Trace.WriteLine($"Acest username: {username} este deja folosit.\n");
                 return false;
             }
 
@@ -44,12 +44,15 @@ namespace Banca_v5.Models
             utiliz.SaveChanges();
 
             Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
-            Trace.WriteLine("Utilizatorul a fost creat.");
+            Trace.WriteLine($"Utilizatorul {username} a fost creat.\n");
             return true;
         }
 
         public bool CreareContBancar(int idpersoana, string iban, int pin, double suma, string moneda)
         {
+            Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
+            Trace.WriteLine("Metoda de creare a contului bancar a fost apelata\n");
+
             ContBancar contBancar = new ContBancar();
             contBancar.IdPersoana = idpersoana;
             contBancar.IBAN = iban;
@@ -57,6 +60,10 @@ namespace Banca_v5.Models
             contBancar.Suma = suma;
             contBancar.Moneda = moneda;
 
+
+            Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
+            Trace.WriteLine($"Contul id:{idpersoana}, iban: {iban}, pin: {pin}, suma: {suma}, modeda: {moneda} a fost creat");
+            Trace.WriteLine("Iesire din metoda creare utilizator.\n");
             return true;
         }
 
@@ -95,7 +102,11 @@ namespace Banca_v5.Models
         }
 
         public bool CreareTranzactie(int idcontexpeditor, int idcontdestinatar, double suma, string moneda)
-        {            
+        {
+            Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
+            Trace.WriteLine("Metoda creare tranzactie a fost apelata.\n");
+
+
             var res = (from c in cntBnc.ConturiBancare
                        where c.IdPersoana.Equals(idcontexpeditor)
                        select c).ToList();
@@ -110,6 +121,10 @@ namespace Banca_v5.Models
             tranzactie.Suma = suma;
             tranzactie.Moneda = moneda;
 
+
+            Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
+            Trace.WriteLine($"Tranzactia dintre expeditorul {idcontexpeditor} si destinatarul {idcontdestinatar} cu suma de {suma} {moneda} a avut loc cu succes");
+            Trace.WriteLine("iesiere din metoda creare tranzactie.\n");
             return true;
         }
 
@@ -197,6 +212,9 @@ namespace Banca_v5.Models
 
         public bool VerificareDateUtilizator(string username, string parola)
         {
+            Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
+            Trace.WriteLine("Metoda Verificare Date Utilizator a fost apelata.\n");
+
             var res = (from u in utiliz.Utilizatori
                        where u.UserName.Equals(username) && u.Parola.Equals(parola)
                        select u).ToList();
@@ -209,6 +227,10 @@ namespace Banca_v5.Models
 
         public bool Autentificare(string username, string parola)
         {
+            Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
+            Trace.WriteLine("Metoda Autentificare a fost apelata.\n");
+
+
             string parola_hashuita = Hash.Hash_SHA1(parola);
 
             var res = (from u in utiliz.Utilizatori
@@ -217,12 +239,14 @@ namespace Banca_v5.Models
 
             if(res == null)
             {
-                Console.WriteLine("username-ul sau parola au fost gresite(din functia care verifica parola si username-ul)");
+                Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
+                Trace.WriteLine($"username-ul {username} sau parola {parola} sunt gresite\n");
                 return false;
             }
             else
             {
-                Console.WriteLine("username-ul si parola au fost gasite si verificate cu succes");
+                Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
+                Trace.WriteLine($"username-ul {username} si parola {parola} au fost gasite si verificate cu succes\n");
                 return true;
             }            
         }

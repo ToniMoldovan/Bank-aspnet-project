@@ -46,7 +46,7 @@ namespace Banca_v5
             this.label1.Font = new System.Drawing.Font("Impact", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(112, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(274, 41);
+            this.label1.Size = new System.Drawing.Size(226, 34);
             this.label1.TabIndex = 0;
             this.label1.Text = "Bun venit la banca!";
             // 
@@ -65,7 +65,7 @@ namespace Banca_v5
             this.txtBoxUsername.Location = new System.Drawing.Point(112, 192);
             this.txtBoxUsername.MaxLength = 30;
             this.txtBoxUsername.Name = "txtBoxUsername";
-            this.txtBoxUsername.Size = new System.Drawing.Size(224, 30);
+            this.txtBoxUsername.Size = new System.Drawing.Size(224, 26);
             this.txtBoxUsername.TabIndex = 2;
             // 
             // label3
@@ -93,7 +93,7 @@ namespace Banca_v5
             this.txtBoxParola.Location = new System.Drawing.Point(112, 288);
             this.txtBoxParola.MaxLength = 30;
             this.txtBoxParola.Name = "txtBoxParola";
-            this.txtBoxParola.Size = new System.Drawing.Size(224, 30);
+            this.txtBoxParola.Size = new System.Drawing.Size(224, 26);
             this.txtBoxParola.TabIndex = 4;
             this.txtBoxParola.UseSystemPasswordChar = true;
             // 
@@ -145,6 +145,7 @@ namespace Banca_v5
             this.Name = "WelcomeForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Welcome";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.WelcomeForm_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

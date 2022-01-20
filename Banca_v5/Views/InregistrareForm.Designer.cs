@@ -71,7 +71,7 @@ namespace Banca_v5.Views
             this.txtBoxParola.Location = new System.Drawing.Point(112, 432);
             this.txtBoxParola.MaxLength = 30;
             this.txtBoxParola.Name = "txtBoxParola";
-            this.txtBoxParola.Size = new System.Drawing.Size(224, 30);
+            this.txtBoxParola.Size = new System.Drawing.Size(224, 26);
             this.txtBoxParola.TabIndex = 12;
             this.txtBoxParola.UseSystemPasswordChar = true;
             // 
@@ -90,7 +90,7 @@ namespace Banca_v5.Views
             this.txtBoxNume.Location = new System.Drawing.Point(112, 112);
             this.txtBoxNume.MaxLength = 30;
             this.txtBoxNume.Name = "txtBoxNume";
-            this.txtBoxNume.Size = new System.Drawing.Size(224, 30);
+            this.txtBoxNume.Size = new System.Drawing.Size(224, 26);
             this.txtBoxNume.TabIndex = 10;
             // 
             // label1
@@ -99,7 +99,7 @@ namespace Banca_v5.Views
             this.label1.Font = new System.Drawing.Font("Impact", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(96, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(306, 41);
+            this.label1.Size = new System.Drawing.Size(252, 34);
             this.label1.TabIndex = 8;
             this.label1.Text = "Inregistrare cont nou";
             // 
@@ -128,7 +128,7 @@ namespace Banca_v5.Views
             this.txtBoxPrenume.Location = new System.Drawing.Point(112, 192);
             this.txtBoxPrenume.MaxLength = 30;
             this.txtBoxPrenume.Name = "txtBoxPrenume";
-            this.txtBoxPrenume.Size = new System.Drawing.Size(224, 30);
+            this.txtBoxPrenume.Size = new System.Drawing.Size(224, 26);
             this.txtBoxPrenume.TabIndex = 18;
             // 
             // txtBoxUsername
@@ -136,7 +136,7 @@ namespace Banca_v5.Views
             this.txtBoxUsername.Location = new System.Drawing.Point(112, 352);
             this.txtBoxUsername.MaxLength = 30;
             this.txtBoxUsername.Name = "txtBoxUsername";
-            this.txtBoxUsername.Size = new System.Drawing.Size(224, 30);
+            this.txtBoxUsername.Size = new System.Drawing.Size(224, 26);
             this.txtBoxUsername.TabIndex = 19;
             // 
             // txtBoxEmail
@@ -144,7 +144,7 @@ namespace Banca_v5.Views
             this.txtBoxEmail.Location = new System.Drawing.Point(112, 272);
             this.txtBoxEmail.MaxLength = 30;
             this.txtBoxEmail.Name = "txtBoxEmail";
-            this.txtBoxEmail.Size = new System.Drawing.Size(224, 30);
+            this.txtBoxEmail.Size = new System.Drawing.Size(224, 26);
             this.txtBoxEmail.TabIndex = 21;
             // 
             // label6
@@ -159,7 +159,7 @@ namespace Banca_v5.Views
             // 
             // InregistrareForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(432, 653);
             this.Controls.Add(this.txtBoxEmail);
@@ -182,6 +182,7 @@ namespace Banca_v5.Views
             this.Name = "InregistrareForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inregistrare";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.InregistrareForm_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

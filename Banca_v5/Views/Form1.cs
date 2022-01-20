@@ -12,6 +12,7 @@ using Banca_v5.Views;
 using System.Drawing.Text;
 using Banca_v5.Models;
 using System.Diagnostics;
+using System.IO;
 
 namespace Banca_v5
 {
@@ -28,11 +29,11 @@ namespace Banca_v5
         
         public WelcomeForm()
         {
+            File.Delete("yourlog.log");
             Trace.Listeners.Add(new TextWriterTraceListener("yourlog.log"));
             Trace.AutoFlush = true;
-            Trace.Indent();
             Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
-            Trace.WriteLine("Entering Main");
+            Trace.WriteLine("Entering Main\n");
             
             
             InitializeComponent();
@@ -54,7 +55,7 @@ namespace Banca_v5
             lblNuAmCont.ForeColor = culoare1;
 
             Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
-            Trace.WriteLine("Exiting Main");
+            Trace.WriteLine("Exiting Main\n");
             Trace.Unindent();
             Trace.Flush();
         }
@@ -80,6 +81,7 @@ namespace Banca_v5
             /*Verificare input-uri*/
             if (txtBoxParola.TextLength < 3 || txtBoxUsername.TextLength < 3)
             {
+
                 MessageBox.Show("Ai introdus prea putine caractere!", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
@@ -98,22 +100,41 @@ namespace Banca_v5
 
                 if (rezultat)
                 {
+
                     Utilizator utilizator = dbHandler.GetUtilizator(username);
 
                     PrincipalForm principalForm = new PrincipalForm(utilizator.Nume, utilizator.Id);
+
+                    Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
+                    Trace.WriteLine($"Autentificare cu succes {username}.");
+
                     MessageBox.Show("Autentificare cu succes!", "Succes", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     principalForm.Show();
                     this.Visible = false;
                 }
                 else
                 {
-                    MessageBox.Show("Numele de utilizator sau parola sunt gresite.", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
+                    Trace.WriteLine("Eroare.Numele de utilizator sau parola sunt gresite.");
+                    MessageBox.Show($"Numele de utilizator {username} sau parola sunt gresite.", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txtBoxParola.Clear();
                     txtBoxUsername.Clear();
 
+                    // deschidere fereastra dupa form autentificare
+
                     btnAutentificare.Enabled = true;
+                    Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
+                    Trace.WriteLine("Iesire formular autentificare.");
+                    Trace.Flush();
                 }
             }
+        }
+
+        private void WelcomeForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
+            Trace.WriteLine("Iesire form autentificare.");
+            Trace.Flush();
         }
     }
 }
