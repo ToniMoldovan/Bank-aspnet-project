@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Banca_v5.Utilizator">
+    <Position X="4.5" Y="6.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAACEAAAAAAEAAAAAAAAAAAAAABQAAAAAAAAA=</HashCode>
+      <FileName>Models\Utilizator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Banca_v5.Models.Tranzactie">
+    <Position X="10.25" Y="6.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>ACACCgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAACAA=</HashCode>
+      <FileName>Models\Tranzactie.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Banca_v5.Models.ContBancar">
+    <Position X="7.5" Y="6.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AiACAgAAAAAAAAAAAAACAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Models\ContBancar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Banca_v5.Models.DbHandler" Collapsed="true">
+    <Position X="2.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACCAAACAAAFAACACCBAAAAAAAAAAAGA=</HashCode>
+      <FileName>Models\DbHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Object" Collapsed="true">
+    <Position X="7.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Banca_v5.Controllers.InsideHandler" Collapsed="true">
+    <Position X="2.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAgAAAAAAEAAAAAAhAAAEEAAAAAACA=</HashCode>
+      <FileName>Controllers\InsideHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Banca_v5.ChangeLanguage" Collapsed="true">
+    <Position X="11.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ChangeLanguage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Banca_v5.Models.Hash" Collapsed="true">
+    <Position X="11.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Hash.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Banca_v5.Properties.Resources" Collapsed="true">
+    <Position X="11.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Banca_v5.Views.AfisareClientiForm" Collapsed="true">
+    <Position X="6.75" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAABECAEQBAAAACAAAACQAABAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Views\AfisareClientiForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Banca_v5.WelcomeForm" Collapsed="true">
+    <Position X="4.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAEAABECAAABQAgQGAAAACYBABAAYAKAAIABAAAAA=</HashCode>
+      <FileName>Views\Form1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Windows.Forms.Form" Collapsed="true">
+    <Position X="9" Y="11" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Banca_v5.Views.InregistrareForm" Collapsed="true">
+    <Position X="2.25" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAABECAAABAAgAKCAAACYgABAAAIIAAAQAAAAAg=</HashCode>
+      <FileName>Views\InregistrareForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Banca_v5.Views.PrincipalForm" Collapsed="true">
+    <Position X="9" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IQhAJBEDUDAAABECAICRAAASQCABAAAAKAIAACBAhgA=</HashCode>
+      <FileName>Views\PrincipalForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Banca_v5.Views.TranzactiiGlobaleForm" Collapsed="true">
+    <Position X="11.25" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAABECAEABAAAACAAAACQAABAAAAIAAAAAAAAAI=</HashCode>
+      <FileName>Views\TranzactiiGlobaleForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Banca_v5.Views.TranzactiiUtilizatorForm" Collapsed="true">
+    <Position X="13.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAIAAAAhECoAABAAAASAAAACQAABAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Views\TranzactiiUtilizatorForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Banca_v5.Views.VerificareAdminForm" Collapsed="true">
+    <Position X="15.75" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAECAAABAAAACAAAACQAABAAQAIAAIAAAgAAA=</HashCode>
+      <FileName>Views\VerificareAdminForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

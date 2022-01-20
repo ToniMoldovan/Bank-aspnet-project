@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ChangeLanguage.cs" />
+    <Compile Include="Controllers\InsideHandler.cs" />
     <Compile Include="Models\ContBancar.cs" />
     <Compile Include="Models\DbHandler.cs" />
     <Compile Include="Models\Hash.cs" />
@@ -162,6 +163,7 @@
     <EmbeddedResource Include="Views\VerificareAdminForm.resx">
       <DependentUpon>VerificareAdminForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -178,7 +180,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Assets\" />
-    <Folder Include="Controllers\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
