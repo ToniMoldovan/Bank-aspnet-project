@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -52,6 +53,9 @@ namespace Banca_v5.Views
             //verificare text-box-uri
             if (System.Text.RegularExpressions.Regex.IsMatch(txtBoxIBAN.Text, "[^0-9]") || System.Text.RegularExpressions.Regex.IsMatch(txtBoxPIN.Text, "[^0-9]") || System.Text.RegularExpressions.Regex.IsMatch(txtBoxSuma.Text, "[^0-9]"))
             {
+                Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
+                Trace.WriteLine("Eroare!, Introdu doar numere!\n");
+
                 MessageBox.Show("Introdu doar numere!", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtBoxIBAN.Clear();
                 txtBoxPIN.Clear();
@@ -61,6 +65,8 @@ namespace Banca_v5.Views
             {
                 if (txtBoxPIN.TextLength != 4 || txtBoxSuma.TextLength < 2)
                 {
+                    Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
+                    Trace.WriteLine("Eroare!, Lungimea pin-ului trebuie sa fie de 4 caractere sau suma introdusa este prea mica (minim 2 cifre)\n");
                     MessageBox.Show("Lungimea pin-ului trebuie sa fie de 4 caractere sau suma introdusa este prea mica (minim 2 cifre)", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txtBoxPIN.Clear();
                     txtBoxSuma.Clear();
@@ -72,6 +78,10 @@ namespace Banca_v5.Views
 
                     if (txtBoxIBAN.TextLength != 10) //Aici setez ca marimea pentru IBAN sa fie strict de 10 caractere
                     {
+                        Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
+                        Trace.WriteLine("Eroare!, IBAN-ul trebuie sa fie de 10 caractere\n");
+
+
                         MessageBox.Show("IBAN-ul trebuie sa fie de 10 caractere", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         txtBoxIBAN.Clear();
                     }
@@ -81,6 +91,9 @@ namespace Banca_v5.Views
 
                         if (txtBoxMoneda.Text != "EURO" || txtBoxMoneda.Text != "RON")
                         {
+                            Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
+                            Trace.WriteLine("Eroare!, Moneda introdusa gresit.\n\nIntrodu EURO sau RON\n");
+
                             MessageBox.Show("Moneda introdusa gresit.\n\nIntrodu EURO sau RON", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             txtBoxMoneda.Clear();
                         }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -52,6 +53,9 @@ namespace Banca_v5.Views
             }
             catch (Exception ex)
             {
+                Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
+                Trace.WriteLine("Eroare!, Eroare la db: {ex}\n");
+
                 Console.WriteLine($"Eroare la db: {ex}");
             }
 
@@ -71,6 +75,10 @@ namespace Banca_v5.Views
             }
             catch (Exception ex)
             {
+                Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
+                Trace.WriteLine("Eroare!, Eroare la db: {ex}\n");
+
+
                 Console.WriteLine($"Eroare la db: {ex}");
             }
         }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -64,6 +65,10 @@ namespace Banca_v5.Views
 
             if (System.Text.RegularExpressions.Regex.IsMatch(txtBoxCont.Text, "[^0-9]") || System.Text.RegularExpressions.Regex.IsMatch(txtBoxSuma.Text, "[^0-9]"))
             {
+                Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
+                Trace.WriteLine("Eroare!, Introdu doar numere!\n");
+
+
                 MessageBox.Show("Introdu doar numere!", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtBoxCont.Clear();
             }
