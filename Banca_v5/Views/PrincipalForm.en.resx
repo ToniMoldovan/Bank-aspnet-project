@@ -146,6 +146,9 @@
         hlvMZsPF0By9VBDUdfXnNx/1fxATk78AerxLaoy5z/oAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="copyrightsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 26</value>
+  </data>
   <data name="iesireToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAxFJREFUSEvF
@@ -165,11 +168,14 @@
         DNGAsHqSAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="iesireToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 26</value>
+  </data>
   <data name="iesireToolStripMenuItem.Text" xml:space="preserve">
     <value>Exit</value>
   </data>
   <data name="meniuToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 26</value>
+    <value>60, 24</value>
   </data>
   <data name="meniuToolStripMenuItem.Text" xml:space="preserve">
     <value>Menu</value>
@@ -190,7 +196,7 @@
 </value>
   </data>
   <data name="tranzactiileMeleToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>195, 26</value>
+    <value>224, 26</value>
   </data>
   <data name="tranzactiileMeleToolStripMenuItem.Text" xml:space="preserve">
     <value>My transactions</value>
@@ -223,7 +229,7 @@
 </value>
   </data>
   <data name="conturileMeleToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>195, 26</value>
+    <value>224, 26</value>
   </data>
   <data name="conturileMeleToolStripMenuItem.Text" xml:space="preserve">
     <value>My accounts</value>
@@ -250,14 +256,11 @@
         QmCC
 </value>
   </data>
-  <data name="trimiteBaniToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>195, 26</value>
-  </data>
   <data name="trimiteBaniToolStripMenuItem.Text" xml:space="preserve">
-    <value>Trimite bani</value>
+    <value>Send money</value>
   </data>
   <data name="operatiuniToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 26</value>
+    <value>96, 24</value>
   </data>
   <data name="operatiuniToolStripMenuItem.Text" xml:space="preserve">
     <value>Operations</value>
@@ -282,8 +285,11 @@
         AABJRU5ErkJggg==
 </value>
   </data>
+  <data name="tranzactiiGlobaleToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 26</value>
+  </data>
   <data name="tranzactiiGlobaleToolStripMenuItem.Text" xml:space="preserve">
-    <value>Tranzactii globale</value>
+    <value>Global transactions</value>
   </data>
   <data name="clientiToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -303,6 +309,12 @@
         lloSm7KvLsFPgKCoM2W5F3wOzv7tl+NS1N/lnbfj0/fUrvARJCDoZbkXfJazL60qYepHP/Btyo1N2l2T
         WLWrJtFDgOAs8R0Pf2NzwVLxbwtjvwA/+5RigFXO7QAAAABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="clientiToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 26</value>
+  </data>
+  <data name="clientiToolStripMenuItem.Text" xml:space="preserve">
+    <value>Clients</value>
   </data>
   <data name="administratorToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -330,17 +342,14 @@
         X4KQkH8BP/CuDfn866IAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="administratorToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 26</value>
-  </data>
   <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>902, 30</value>
+    <value>902, 28</value>
   </data>
   <data name="lblSalutare.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 21</value>
+    <value>62, 21</value>
   </data>
   <data name="lblSalutare.Text" xml:space="preserve">
-    <value>Hay,</value>
+    <value>Hello,</value>
   </data>
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -657,6 +666,9 @@
   </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>144, 144</value>
+  </data>
+  <data name="btnExtrageSold.Text" xml:space="preserve">
+    <value>Withdraw account balance</value>
   </data>
   <data name="btnStergeContBancar.Font" type="System.Drawing.Font, System.Drawing">
     <value>Gadugi, 10.2pt, style=Bold</value>

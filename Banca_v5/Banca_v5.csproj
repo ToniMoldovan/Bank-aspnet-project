@@ -138,14 +138,23 @@
     <Compile Include="Views\VerificareAdminForm.Designer.cs">
       <DependentUpon>VerificareAdminForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\AdaugContBancForm.en.resx">
+      <DependentUpon>AdaugContBancForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\AdaugContBancForm.resx">
       <DependentUpon>AdaugContBancForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AdaugSoldContForm.en.resx">
+      <DependentUpon>AdaugSoldContForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\AdaugSoldContForm.resx">
       <DependentUpon>AdaugSoldContForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\AfisareClientiForm.resx">
       <DependentUpon>AfisareClientiForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ExtragSoldContForm.en.resx">
+      <DependentUpon>ExtragSoldContForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\ExtragSoldContForm.resx">
       <DependentUpon>ExtragSoldContForm.cs</DependentUpon>
@@ -181,8 +190,11 @@
     <EmbeddedResource Include="Views\PrincipalForm.resx">
       <DependentUpon>PrincipalForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\PrincipalForm.ro.resx">
+    <EmbeddedResource Include="Views\PrincipalForm.ro-MD.resx">
       <DependentUpon>PrincipalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\StergContBancForm.en.resx">
+      <DependentUpon>StergContBancForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\StergContBancForm.resx">
       <DependentUpon>StergContBancForm.cs</DependentUpon>
@@ -201,6 +213,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\TranzactiiUtilizatorForm.resx">
       <DependentUpon>TranzactiiUtilizatorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\TrimiteBaniForm.en.resx">
+      <DependentUpon>TrimiteBaniForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\TrimiteBaniForm.resx">
+      <DependentUpon>TrimiteBaniForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\VerificareAdminForm.en.resx">
       <DependentUpon>VerificareAdminForm.cs</DependentUpon>
