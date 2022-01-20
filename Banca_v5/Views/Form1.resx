@@ -117,7 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Bun venit la banca!</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>432, 517</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAgAAAAAAAEAIABJewAAhgAAAICAAAABACAAKAgBAM97AABISAAAAQAgAIhUAAD3gwEAQEAAAAEA
@@ -2712,4 +2718,306 @@
         BwAA4AcAAOAPAADgDwAA4B8AAPA/AAD//wAA
 </value>
   </data>
+  <data name="&gt;&gt;btnEngleza.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="btnAutentificare.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Gadugi, 10.2pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;btnRomana.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Gadugi, 10.2pt, style=Bold</value>
+  </data>
+  <data name="btnRomana.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 32</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="txtBoxParola.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;btnRomana.Name" xml:space="preserve">
+    <value>btnRomana</value>
+  </data>
+  <data name="&gt;&gt;txtBoxParola.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;btnAutentificare.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 20</value>
+  </data>
+  <data name="&gt;&gt;txtBoxUsername.Name" xml:space="preserve">
+    <value>txtBoxUsername</value>
+  </data>
+  <data name="txtBoxParola.MaxLength" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Impact, 19.8pt</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;lblNuAmCont.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtBoxUsername.MaxLength" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 160</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>274, 41</value>
+  </data>
+  <data name="&gt;&gt;txtBoxUsername.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtBoxParola.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblNuAmCont.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="txtBoxUsername.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lblNuAmCont.Text" xml:space="preserve">
+    <value>Nu am cont</value>
+  </data>
+  <data name="lblNuAmCont.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 24</value>
+  </data>
+  <data name="&gt;&gt;btnAutentificare.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>357, 29</value>
+  </data>
+  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Gadugi, 10.2pt, style=Bold</value>
+  </data>
+  <data name="txtBoxUsername.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 192</value>
+  </data>
+  <data name="txtBoxParola.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 30</value>
+  </data>
+  <data name="btnRomana.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 482</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="btnRomana.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Gadugi, 10.2pt</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Parola</value>
+  </data>
+  <data name="&gt;&gt;txtBoxUsername.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="txtBoxParola.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 288</value>
+  </data>
+  <data name="btnEngleza.Location" type="System.Drawing.Point, System.Drawing">
+    <value>64, 482</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Nume utilizator</value>
+  </data>
+  <data name="lblNuAmCont.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Gadugi, 12pt, style=Bold, Italic</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnAutentificare.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;btnEngleza.Name" xml:space="preserve">
+    <value>btnEngleza</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>9, 20</value>
+  </data>
+  <data name="btnAutentificare.Location" type="System.Drawing.Point, System.Drawing">
+    <value>128, 352</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;txtBoxParola.Name" xml:space="preserve">
+    <value>txtBoxParola</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;btnAutentificare.Name" xml:space="preserve">
+    <value>btnAutentificare</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtBoxParola.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="lblNuAmCont.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btnAutentificare.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="$this.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="btnAutentificare.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 48</value>
+  </data>
+  <data name="&gt;&gt;lblNuAmCont.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 16</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Welcome</value>
+  </data>
+  <data name="&gt;&gt;btnRomana.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Introdu datele pentru autentificare.</value>
+  </data>
+  <data name="&gt;&gt;btnEngleza.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>80, 80</value>
+  </data>
+  <data name="&gt;&gt;txtBoxUsername.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 256</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 20</value>
+  </data>
+  <data name="txtBoxUsername.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 30</value>
+  </data>
+  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Impact, 13.8pt</value>
+  </data>
+  <data name="lblNuAmCont.Location" type="System.Drawing.Point, System.Drawing">
+    <value>176, 448</value>
+  </data>
+  <data name="btnEngleza.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="btnEngleza.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 32</value>
+  </data>
+  <data name="btnAutentificare.Text" xml:space="preserve">
+    <value>Autentificare</value>
+  </data>
+  <data name="btnRomana.Text" xml:space="preserve">
+    <value>RO</value>
+  </data>
+  <data name="&gt;&gt;btnRomana.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>WelcomeForm</value>
+  </data>
+  <data name="&gt;&gt;btnEngleza.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblNuAmCont.Name" xml:space="preserve">
+    <value>lblNuAmCont</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnEngleza.Text" xml:space="preserve">
+    <value>EN</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblNuAmCont.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>en</value>
+  </metadata>
 </root>

@@ -48,24 +48,24 @@ namespace Banca_v5.Models
             return true;
         }
 
-        public bool CreareContBancar(int idpersoana, string iban, int pin, double suma, string moneda)
-        {
-            Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
-            Trace.WriteLine("Metoda de creare a contului bancar a fost apelata\n");
+        //public bool CreareContBancar(int idpersoana, string iban, int pin, double suma, string moneda)
+        //{
+        //    Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
+        //    Trace.WriteLine("Metoda de creare a contului bancar a fost apelata\n");
 
-            ContBancar contBancar = new ContBancar();
-            contBancar.IdPersoana = idpersoana;
-            contBancar.IBAN = iban;
-            contBancar.Pin = pin;
-            contBancar.Suma = suma;
-            contBancar.Moneda = moneda;
+        //    ContBancar contBancar = new ContBancar();
+        //    contBancar.IdPersoana = idpersoana;
+        //    contBancar.IBAN = iban;
+        //    contBancar.Pin = pin;
+        //    contBancar.Suma = suma;
+        //    contBancar.Moneda = moneda;
 
 
-            Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
-            Trace.WriteLine($"Contul id:{idpersoana}, iban: {iban}, pin: {pin}, suma: {suma}, modeda: {moneda} a fost creat");
-            Trace.WriteLine("Iesire din metoda creare utilizator.\n");
-            return true;
-        }
+        //    Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
+        //    Trace.WriteLine($"Contul id:{idpersoana}, iban: {iban}, pin: {pin}, suma: {suma}, modeda: {moneda} a fost creat");
+        //    Trace.WriteLine("Iesire din metoda creare utilizator.\n");
+        //    return true;
+        //}
 
         /*Getter implementat de Toni - in caz de bug-uri*/
         public Utilizator GetUtilizator(string username)
@@ -101,32 +101,32 @@ namespace Banca_v5.Models
             }
         }
 
-        public bool CreareTranzactie(int idcontexpeditor, int idcontdestinatar, double suma, string moneda)
-        {
-            Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
-            Trace.WriteLine("Metoda creare tranzactie a fost apelata.\n");
+        //public bool CreareTranzactie(int idcontexpeditor, int idcontdestinatar, double suma, string moneda)
+        //{
+        //    Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
+        //    Trace.WriteLine("Metoda creare tranzactie a fost apelata.\n");
 
 
-            var res = (from c in cntBnc.ConturiBancare
-                       where c.IdPersoana.Equals(idcontexpeditor)
-                       select c).ToList();
+        //    var res = (from c in cntBnc.ConturiBancare
+        //               where c.IdPersoana.Equals(idcontexpeditor)
+        //               select c).ToList();
 
-            foreach (var item in res)
-                if (item.Suma < suma)
-                    return false;   // suma tranzactionata ar fi mai mare decat suma din cont
+        //    foreach (var item in res)
+        //        if (item.Suma < suma)
+        //            return false;   // suma tranzactionata ar fi mai mare decat suma din cont
 
-            Tranzactie tranzactie = new Tranzactie();
-            tranzactie.IdContExpeditor = idcontexpeditor;
-            tranzactie.IdContDestinatar = idcontdestinatar;
-            tranzactie.Suma = suma;
-            tranzactie.Moneda = moneda;
+        //    Tranzactie tranzactie = new Tranzactie();
+        //    tranzactie.IdContExpeditor = idcontexpeditor;
+        //    tranzactie.IdContDestinatar = idcontdestinatar;
+        //    tranzactie.Suma = suma;
+        //    tranzactie.Moneda = moneda;
 
 
-            Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
-            Trace.WriteLine($"Tranzactia dintre expeditorul {idcontexpeditor} si destinatarul {idcontdestinatar} cu suma de {suma} {moneda} a avut loc cu succes");
-            Trace.WriteLine("iesiere din metoda creare tranzactie.\n");
-            return true;
-        }
+        //    Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
+        //    Trace.WriteLine($"Tranzactia dintre expeditorul {idcontexpeditor} si destinatarul {idcontdestinatar} cu suma de {suma} {moneda} a avut loc cu succes");
+        //    Trace.WriteLine("iesiere din metoda creare tranzactie.\n");
+        //    return true;
+        //}
 
         /*Adaugare cont bancar - TONI MODIFICA AICI*/
         public bool AdaugareContBancar(int idPers, string IBAN, int pin, double suma, string moneda)
