@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 using Banca_v5.Models;
 using Banca_v5.Views;
+using System.Diagnostics;
 
 namespace Banca_v5.Views
 {
@@ -25,6 +26,9 @@ namespace Banca_v5.Views
 
         public InregistrareForm()
         {
+            Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
+            Trace.WriteLine("Initializare form inregistrare.\n");
+
             InitializeComponent();
 
             /*Initializare culori*/
@@ -51,10 +55,13 @@ namespace Banca_v5.Views
                 || txtBoxPrenume.TextLength < 3 || txtBoxEmail.TextLength < 3)
             {
                 MessageBox.Show("Ai introdus prea putine caractere!", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
+                Trace.WriteLine("Ai introdus prea putine caractere!\n");
             }
             else
             {
                 MessageBox.Show("Acum se verifica datele.. Asteapta te rog.", "Rulare..", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+
                 btnInregistrare.Enabled = false;
 
                 string nume, prenume, username, parola, email;
@@ -74,11 +81,15 @@ namespace Banca_v5.Views
                 if (rezultat) //Crearea a avut loc cu succes
                 {
                     MessageBox.Show("Inregistrare cu succes!", "Succes", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
+                    Trace.WriteLine("Inregistrare cu succes!\n");
                     this.Close();
                 }
                 else
                 {
                     MessageBox.Show("Eroare! Posibil ca utilizatorul sa existe deja.", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
+                    Trace.WriteLine("Eroare! Posibil ca utilizatorul sa existe deja.\n");
                     txtBoxEmail.Clear();
                     txtBoxNume.Clear();
                     txtBoxPrenume.Clear();
@@ -88,6 +99,12 @@ namespace Banca_v5.Views
                     btnInregistrare.Enabled = true;
                 }
             }
+        }
+
+        private void InregistrareForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
+            Trace.WriteLine("Iesire formular inregistrare.\n");
         }
     }
 }
