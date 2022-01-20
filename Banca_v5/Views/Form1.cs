@@ -98,7 +98,11 @@ namespace Banca_v5
 
                 if (rezultat)
                 {
+                    Utilizator utilizator = dbHandler.GetUtilizator(username);
+
+                    PrincipalForm principalForm = new PrincipalForm(utilizator.Nume, utilizator.Id);
                     MessageBox.Show("Autentificare cu succes!", "Succes", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    principalForm.Show();
                     this.Visible = false;
                 }
                 else
