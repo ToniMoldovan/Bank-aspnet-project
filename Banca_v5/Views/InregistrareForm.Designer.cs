@@ -46,122 +46,72 @@ namespace Banca_v5.Views
             // 
             // btnInregistrare
             // 
+            resources.ApplyResources(this.btnInregistrare, "btnInregistrare");
             this.btnInregistrare.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnInregistrare.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInregistrare.Location = new System.Drawing.Point(128, 512);
             this.btnInregistrare.Name = "btnInregistrare";
-            this.btnInregistrare.Size = new System.Drawing.Size(192, 48);
-            this.btnInregistrare.TabIndex = 14;
-            this.btnInregistrare.Text = "Inregistrare";
             this.btnInregistrare.UseVisualStyleBackColor = true;
             this.btnInregistrare.Click += new System.EventHandler(this.btnInregistrare_Click);
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(112, 400);
+            resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(59, 20);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "Parola";
             // 
             // txtBoxParola
             // 
-            this.txtBoxParola.Location = new System.Drawing.Point(112, 432);
-            this.txtBoxParola.MaxLength = 30;
+            resources.ApplyResources(this.txtBoxParola, "txtBoxParola");
             this.txtBoxParola.Name = "txtBoxParola";
-            this.txtBoxParola.Size = new System.Drawing.Size(224, 26);
-            this.txtBoxParola.TabIndex = 12;
             this.txtBoxParola.UseSystemPasswordChar = true;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(112, 320);
+            resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(135, 20);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "Nume utilizator";
             // 
             // txtBoxNume
             // 
-            this.txtBoxNume.Location = new System.Drawing.Point(112, 112);
-            this.txtBoxNume.MaxLength = 30;
+            resources.ApplyResources(this.txtBoxNume, "txtBoxNume");
             this.txtBoxNume.Name = "txtBoxNume";
-            this.txtBoxNume.Size = new System.Drawing.Size(224, 26);
-            this.txtBoxNume.TabIndex = 10;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Impact", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(96, 16);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(252, 34);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Inregistrare cont nou";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(112, 80);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 20);
-            this.label2.TabIndex = 16;
-            this.label2.Text = "Nume";
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(112, 160);
+            resources.ApplyResources(this.label5, "label5");
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(80, 20);
-            this.label5.TabIndex = 17;
-            this.label5.Text = "Prenume";
             // 
             // txtBoxPrenume
             // 
-            this.txtBoxPrenume.Location = new System.Drawing.Point(112, 192);
-            this.txtBoxPrenume.MaxLength = 30;
+            resources.ApplyResources(this.txtBoxPrenume, "txtBoxPrenume");
             this.txtBoxPrenume.Name = "txtBoxPrenume";
-            this.txtBoxPrenume.Size = new System.Drawing.Size(224, 26);
-            this.txtBoxPrenume.TabIndex = 18;
             // 
             // txtBoxUsername
             // 
-            this.txtBoxUsername.Location = new System.Drawing.Point(112, 352);
-            this.txtBoxUsername.MaxLength = 30;
+            resources.ApplyResources(this.txtBoxUsername, "txtBoxUsername");
             this.txtBoxUsername.Name = "txtBoxUsername";
-            this.txtBoxUsername.Size = new System.Drawing.Size(224, 26);
-            this.txtBoxUsername.TabIndex = 19;
             // 
             // txtBoxEmail
             // 
-            this.txtBoxEmail.Location = new System.Drawing.Point(112, 272);
-            this.txtBoxEmail.MaxLength = 30;
+            resources.ApplyResources(this.txtBoxEmail, "txtBoxEmail");
             this.txtBoxEmail.Name = "txtBoxEmail";
-            this.txtBoxEmail.Size = new System.Drawing.Size(224, 26);
-            this.txtBoxEmail.TabIndex = 21;
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(112, 240);
+            resources.ApplyResources(this.label6, "label6");
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(53, 20);
-            this.label6.TabIndex = 20;
-            this.label6.Text = "Email";
             // 
             // InregistrareForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(432, 653);
             this.Controls.Add(this.txtBoxEmail);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtBoxUsername);
@@ -174,14 +124,9 @@ namespace Banca_v5.Views
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtBoxNume);
             this.Controls.Add(this.label1);
-            this.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.Name = "InregistrareForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Inregistrare";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.InregistrareForm_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();

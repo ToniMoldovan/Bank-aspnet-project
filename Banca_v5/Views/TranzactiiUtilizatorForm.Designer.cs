@@ -40,60 +40,38 @@ namespace Banca_v5.Views
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Gadugi", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(32, 32);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(116, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "AM TRIMIS";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Gadugi", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(688, 320);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(117, 24);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "AM PRIMIT";
             // 
             // dgvTranzExped
             // 
+            resources.ApplyResources(this.dgvTranzExped, "dgvTranzExped");
             this.dgvTranzExped.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTranzExped.Location = new System.Drawing.Point(32, 80);
             this.dgvTranzExped.Name = "dgvTranzExped";
-            this.dgvTranzExped.RowHeadersWidth = 51;
             this.dgvTranzExped.RowTemplate.Height = 24;
-            this.dgvTranzExped.Size = new System.Drawing.Size(768, 160);
-            this.dgvTranzExped.TabIndex = 2;
             // 
             // dgvTranzPrimite
             // 
+            resources.ApplyResources(this.dgvTranzPrimite, "dgvTranzPrimite");
             this.dgvTranzPrimite.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTranzPrimite.Location = new System.Drawing.Point(32, 368);
             this.dgvTranzPrimite.Name = "dgvTranzPrimite";
-            this.dgvTranzPrimite.RowHeadersWidth = 51;
             this.dgvTranzPrimite.RowTemplate.Height = 24;
-            this.dgvTranzPrimite.Size = new System.Drawing.Size(768, 160);
-            this.dgvTranzPrimite.TabIndex = 3;
             // 
             // TranzactiiUtilizatorForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(832, 553);
             this.Controls.Add(this.dgvTranzPrimite);
             this.Controls.Add(this.dgvTranzExped);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.Name = "TranzactiiUtilizatorForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Tranzactiile mele";
             ((System.ComponentModel.ISupportInitialize)(this.dgvTranzExped)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTranzPrimite)).EndInit();
             this.ResumeLayout(false);
