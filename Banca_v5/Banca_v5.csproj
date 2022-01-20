@@ -44,6 +44,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -56,6 +57,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChangeLanguage.cs" />
+    <Compile Include="Controllers\InsideHandler.cs" />
     <Compile Include="Models\ContBancar.cs" />
     <Compile Include="Models\DbHandler.cs" />
     <Compile Include="Models\Hash.cs" />
@@ -108,6 +111,9 @@
     <EmbeddedResource Include="Views\AfisareClientiForm.resx">
       <DependentUpon>AfisareClientiForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\Form1.en.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -121,21 +127,43 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Views\InregistrareForm.bin.resx">
+      <DependentUpon>InregistrareForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\InregistrareForm.en.resx">
+      <DependentUpon>InregistrareForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\InregistrareForm.resx">
       <DependentUpon>InregistrareForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\PrincipalForm.en.resx">
+      <DependentUpon>PrincipalForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\PrincipalForm.resx">
       <DependentUpon>PrincipalForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\TranzactiiGlobaleForm.aa.resx">
+      <DependentUpon>TranzactiiGlobaleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\TranzactiiGlobaleForm.en.resx">
+      <DependentUpon>TranzactiiGlobaleForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\TranzactiiGlobaleForm.resx">
       <DependentUpon>TranzactiiGlobaleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\TranzactiiUtilizatorForm.en.resx">
+      <DependentUpon>TranzactiiUtilizatorForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\TranzactiiUtilizatorForm.resx">
       <DependentUpon>TranzactiiUtilizatorForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\VerificareAdminForm.en.resx">
+      <DependentUpon>VerificareAdminForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\VerificareAdminForm.resx">
       <DependentUpon>VerificareAdminForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -152,7 +180,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Assets\" />
-    <Folder Include="Controllers\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

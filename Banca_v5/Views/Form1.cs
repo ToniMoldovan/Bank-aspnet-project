@@ -103,14 +103,15 @@ namespace Banca_v5
 
                     Utilizator utilizator = dbHandler.GetUtilizator(username);
 
-                    PrincipalForm principalForm = new PrincipalForm(utilizator.Nume, utilizator.Id);
-
                     Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
                     Trace.WriteLine($"Autentificare cu succes {username}.");
 
                     MessageBox.Show("Autentificare cu succes!", "Succes", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    principalForm.Show();
-                    this.Visible = false;
+
+                    this.Hide();
+                    PrincipalForm principalForm = new PrincipalForm(utilizator.Nume, utilizator.Id);
+                    principalForm.Closed += (s, args) => this.Close();
+                    principalForm.ShowDialog();
                 }
                 else
                 {
@@ -119,8 +120,6 @@ namespace Banca_v5
                     MessageBox.Show($"Numele de utilizator {username} sau parola sunt gresite.", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txtBoxParola.Clear();
                     txtBoxUsername.Clear();
-
-                    // deschidere fereastra dupa form autentificare
 
                     btnAutentificare.Enabled = true;
                     Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
@@ -135,6 +134,21 @@ namespace Banca_v5
             Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
             Trace.WriteLine("Iesire form autentificare.");
             Trace.Flush();
+        }
+
+        private void btnRomana_Click(object sender, EventArgs e)
+        {
+            var changeLanguage = new ChangeLanguage();
+            changeLanguage.UpdateConfig("language","ro");
+            Application.Restart();
+
+        }
+
+        private void btnEngleza_Click(object sender, EventArgs e)
+        {
+            var changeLanguage = new ChangeLanguage();
+            changeLanguage.UpdateConfig("language", "en");
+            Application.Restart();
         }
     }
 }
