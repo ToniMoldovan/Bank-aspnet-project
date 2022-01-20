@@ -37,39 +37,25 @@ namespace Banca_v5.Views
             // 
             // dgvTranzactii
             // 
+            resources.ApplyResources(this.dgvTranzactii, "dgvTranzactii");
             this.dgvTranzactii.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTranzactii.Location = new System.Drawing.Point(33, 92);
             this.dgvTranzactii.Name = "dgvTranzactii";
-            this.dgvTranzactii.RowHeadersWidth = 51;
             this.dgvTranzactii.RowTemplate.Height = 24;
-            this.dgvTranzactii.Size = new System.Drawing.Size(816, 416);
-            this.dgvTranzactii.TabIndex = 3;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Gadugi", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(33, 44);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(250, 21);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Toate tranzactiile clientilor:";
             // 
             // TranzactiiGlobaleForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(882, 553);
             this.Controls.Add(this.dgvTranzactii);
             this.Controls.Add(this.label1);
-            this.Font = new System.Drawing.Font("Gadugi", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "TranzactiiGlobaleForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Tranzactii Globale";
             ((System.ComponentModel.ISupportInitialize)(this.dgvTranzactii)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

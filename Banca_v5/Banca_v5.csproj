@@ -127,17 +127,38 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Views\InregistrareForm.bin.resx">
+      <DependentUpon>InregistrareForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\InregistrareForm.en.resx">
+      <DependentUpon>InregistrareForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\InregistrareForm.resx">
       <DependentUpon>InregistrareForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\PrincipalForm.en.resx">
+      <DependentUpon>PrincipalForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\PrincipalForm.resx">
       <DependentUpon>PrincipalForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\TranzactiiGlobaleForm.aa.resx">
+      <DependentUpon>TranzactiiGlobaleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\TranzactiiGlobaleForm.en.resx">
+      <DependentUpon>TranzactiiGlobaleForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\TranzactiiGlobaleForm.resx">
       <DependentUpon>TranzactiiGlobaleForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\TranzactiiUtilizatorForm.en.resx">
+      <DependentUpon>TranzactiiUtilizatorForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\TranzactiiUtilizatorForm.resx">
       <DependentUpon>TranzactiiUtilizatorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\VerificareAdminForm.en.resx">
+      <DependentUpon>VerificareAdminForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\VerificareAdminForm.resx">
       <DependentUpon>VerificareAdminForm.cs</DependentUpon>

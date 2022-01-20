@@ -37,48 +37,32 @@ namespace Banca_v5.Views
             // 
             // btnAutentificare
             // 
+            resources.ApplyResources(this.btnAutentificare, "btnAutentificare");
             this.btnAutentificare.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAutentificare.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAutentificare.Location = new System.Drawing.Point(48, 128);
             this.btnAutentificare.Name = "btnAutentificare";
-            this.btnAutentificare.Size = new System.Drawing.Size(192, 48);
-            this.btnAutentificare.TabIndex = 9;
-            this.btnAutentificare.Text = "Autentificare";
             this.btnAutentificare.UseVisualStyleBackColor = true;
             this.btnAutentificare.Click += new System.EventHandler(this.btnAutentificare_Click);
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(80, 16);
+            resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(125, 20);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Introdu parola";
             // 
             // txtBoxParolaAdmin
             // 
-            this.txtBoxParolaAdmin.Location = new System.Drawing.Point(32, 48);
-            this.txtBoxParolaAdmin.MaxLength = 30;
+            resources.ApplyResources(this.txtBoxParolaAdmin, "txtBoxParolaAdmin");
             this.txtBoxParolaAdmin.Name = "txtBoxParolaAdmin";
-            this.txtBoxParolaAdmin.Size = new System.Drawing.Size(224, 22);
-            this.txtBoxParolaAdmin.TabIndex = 7;
             // 
             // VerificareAdminForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(295, 247);
             this.Controls.Add(this.btnAutentificare);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtBoxParolaAdmin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "VerificareAdminForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Admin";
             this.ResumeLayout(false);
             this.PerformLayout();
 
