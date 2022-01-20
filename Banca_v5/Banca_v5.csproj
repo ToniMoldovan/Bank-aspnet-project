@@ -147,6 +147,9 @@
     <EmbeddedResource Include="Views\AfisareClientiForm.resx">
       <DependentUpon>AfisareClientiForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\ExtragSoldContForm.resx">
+      <DependentUpon>ExtragSoldContForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Form1.en.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -177,6 +180,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\PrincipalForm.resx">
       <DependentUpon>PrincipalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\PrincipalForm.ro.resx">
+      <DependentUpon>PrincipalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\StergContBancForm.resx">
+      <DependentUpon>StergContBancForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\TranzactiiGlobaleForm.aa.resx">
       <DependentUpon>TranzactiiGlobaleForm.cs</DependentUpon>

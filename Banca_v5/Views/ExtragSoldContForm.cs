@@ -69,10 +69,20 @@ namespace Banca_v5.Views
             }
             else
             {
-                id = int.Parse(txtBoxCont.Text);
-                suma = double.Parse(txtBoxSuma.Text);
+                if (txtBoxCont.TextLength == 0 || txtBoxSuma.TextLength == 0)
+                {
+                    MessageBox.Show("S-au detectat campuri goale!", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    txtBoxCont.Clear();
+                    txtBoxSuma.Clear();
+                }
+                else
+                {
+                    id = int.Parse(txtBoxCont.Text);
+                    suma = double.Parse(txtBoxSuma.Text);
 
-                //Apelare functie de extragere
+                    //Apelare functie de extragere
+                }
+
             }
         }
     }

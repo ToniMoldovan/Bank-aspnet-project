@@ -52,6 +52,7 @@ namespace Banca_v5.Views
             // 
             resources.ApplyResources(this.txtBoxParolaAdmin, "txtBoxParolaAdmin");
             this.txtBoxParolaAdmin.Name = "txtBoxParolaAdmin";
+            this.txtBoxParolaAdmin.UseSystemPasswordChar = true;
             // 
             // VerificareAdminForm
             // 

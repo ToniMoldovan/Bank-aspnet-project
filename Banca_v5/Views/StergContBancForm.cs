@@ -66,8 +66,17 @@ namespace Banca_v5.Views
             }
             else
             {
-                idCont = int.Parse(txtBoxCont.Text);
-                //Apelare functie de stergere
+                if (txtBoxCont.TextLength == 0)
+                {
+                    MessageBox.Show("S-au detectat campuri goale!", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    txtBoxCont.Clear();
+                }
+                else
+                {
+                    idCont = int.Parse(txtBoxCont.Text);
+                    //Apelare functie de stergere
+                }
+
             }
         }
     }
