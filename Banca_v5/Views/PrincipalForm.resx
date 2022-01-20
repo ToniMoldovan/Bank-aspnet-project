@@ -532,8 +532,8 @@
   <data name="btnStergeContBancar.Text" xml:space="preserve">
     <value>Sterge cont bancar</value>
   </data>
-  <data name="&gt;&gt;lblSalutare.ZOrder" xml:space="preserve">
-    <value>5</value>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>720, 32</value>
   </data>
   <data name="lblSoldEuro.Text" xml:space="preserve">
     <value>...</value>
@@ -3217,6 +3217,9 @@
         hlvMZsPF0By9VBDUdfXnNx/1fxATk78AerxLaoy5z/oAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="administratorToolStripMenuItem.Text" xml:space="preserve">
+    <value>Administrator</value>
+  </data>
   <data name="tranzactiiGlobaleToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAA0VJREFUSEu1
@@ -3236,9 +3239,6 @@
         5ODVrhSkFQThsvxM2f+dg1de6cUf/b3vtFGXltmRYqbWKaDwH7Edtms+U66T/m0h5A97W2ttSmDrjgAA
         AABJRU5ErkJggg==
 </value>
-  </data>
-  <data name="btnExtrageSold.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
   </data>
   <data name="copyrightsToolStripMenuItem.Text" xml:space="preserve">
     <value>Copyright</value>
@@ -3300,6 +3300,9 @@
         X4KQkH8BP/CuDfn866IAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="&gt;&gt;lblSalutare.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
   <data name="&gt;&gt;btnAdaugaContBancar.Name" xml:space="preserve">
     <value>btnAdaugaContBancar</value>
   </data>
@@ -3324,8 +3327,27 @@
   <data name="&gt;&gt;meniuToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="lblSalutare.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="iesireToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAxFJREFUSEvF
+        VclOG0EQHZBRpHhhsZAHHGyDzWKDkAUIMPvqjX3HIMA2m/gALvxAcslX5B84OXFuySX3HGCUCyekiC/o
+        ziunPZ5x2wKhSCnpaWrs111dr7pqlP9iOzs7tel02n12dhZ4CcD1bG9vW8Ty6nZyclJ3dXV1s7q6+jA5
+        OclHR0cJTDzL3/XfJyYm2PLy8mM2m31/fHz8VmxntsPDQ0smk7kNhUKst7dXR19f37N+EcFgkO3u7n47
+        ODiwim1Ldnl5eQ0CRwACE89y3/hekdPT08NSqdRHse1fi0ajNclkUuvu7uYCDETJB+cH5PtUjv39/a/I
+        QOfPzc09gftGbK8osVisCZqzzs7OiggEAgwb5dbW1iR9UWRfPB7XjPz+/n62tbUVFBRFmZ2dVUdGRpjf
+        7+cCut/R0UEFzK2srEi6Xlxc+BYXFzXiGNeS1DhMWNAUZWZmRh0aGmI+n48LFHyv10uyfEYA6eSomXdh
+        YUEjTpFfXNvV1cVxoFKA6elpdWBggLW1tRXg8XgKT6SeQwBpczo5dNbK+UWfJMWhSgGmpqbUcDjM3G43
+        J7S2tjIUPpdIJCRZzs/PfchYI06RD5j89vZ2vrS0ZA5AhVFVtYD5+fk8NpdOfnp6+g5czeVy6dxKgGwM
+        mZcC4Aap1DjNzc2cMDY2dr++vu4Rf+uGm2SFbHnB0/nlPqSi2pkzoGZxOp1cgMbA3cbGhldQdEPqVlzr
+        L8Qx8o0+SSUFoDZvbGzkAqyhoYHmDAWRMhFB8ka+0W9paTHXgG4RtXh9fb0E9Mf95uZm1SCV1lAdTLeI
+        +oBa3G63cwGTjyB36ExJLmo+ksvhcJj4uATmPkDDNNE0tNlsXEDySa69vT0pk6OjIyv0zhv5VAN0cmlU
+        QKKaSCSiic2qAr3yG9yf5cCo+UXaG3hPaMTSsCPDRLxGqqZTV/CN79U4DPUxj2sypGmBbrciyKsDoEm/
+        Yy/5g0OG7q3D9/hmeHj4gcYudeRLQBN0cHDwEbp/qDQBJBsfH6/FSdwgB14CXBIP1jz/0f/3pih/AE14
+        DNGAsHqSAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="&gt;&gt;conturileMeleToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;panelUser.Parent" xml:space="preserve">
     <value>$this</value>
@@ -3338,9 +3360,6 @@
   </data>
   <data name="&gt;&gt;meniuToolStripMenuItem.Name" xml:space="preserve">
     <value>meniuToolStripMenuItem</value>
-  </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>Sold curent RON:</value>
   </data>
   <data name="tranzactiileMeleToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>204, 26</value>
@@ -3375,12 +3394,6 @@
   <data name="meniuToolStripMenuItem.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>None</value>
   </data>
-  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>720, 32</value>
-  </data>
-  <data name="lblSoldEuro.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
   <data name="lblSoldRon.Text" xml:space="preserve">
     <value>...</value>
   </data>
@@ -3414,6 +3427,9 @@
   <data name="&gt;&gt;lblSoldRon.Name" xml:space="preserve">
     <value>lblSoldRon</value>
   </data>
+  <data name="meniuToolStripMenuItem.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
   <data name="lblSalutare.Text" xml:space="preserve">
     <value>Salutare, </value>
   </data>
@@ -3422,25 +3438,6 @@
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
-  </data>
-  <data name="iesireToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAxFJREFUSEvF
-        VclOG0EQHZBRpHhhsZAHHGyDzWKDkAUIMPvqjX3HIMA2m/gALvxAcslX5B84OXFuySX3HGCUCyekiC/o
-        ziunPZ5x2wKhSCnpaWrs111dr7pqlP9iOzs7tel02n12dhZ4CcD1bG9vW8Ty6nZyclJ3dXV1s7q6+jA5
-        OclHR0cJTDzL3/XfJyYm2PLy8mM2m31/fHz8VmxntsPDQ0smk7kNhUKst7dXR19f37N+EcFgkO3u7n47
-        ODiwim1Ldnl5eQ0CRwACE89y3/hekdPT08NSqdRHse1fi0ajNclkUuvu7uYCDETJB+cH5PtUjv39/a/I
-        QOfPzc09gftGbK8osVisCZqzzs7OiggEAgwb5dbW1iR9UWRfPB7XjPz+/n62tbUVFBRFmZ2dVUdGRpjf
-        7+cCut/R0UEFzK2srEi6Xlxc+BYXFzXiGNeS1DhMWNAUZWZmRh0aGmI+n48LFHyv10uyfEYA6eSomXdh
-        YUEjTpFfXNvV1cVxoFKA6elpdWBggLW1tRXg8XgKT6SeQwBpczo5dNbK+UWfJMWhSgGmpqbUcDjM3G43
-        J7S2tjIUPpdIJCRZzs/PfchYI06RD5j89vZ2vrS0ZA5AhVFVtYD5+fk8NpdOfnp6+g5czeVy6dxKgGwM
-        mZcC4Aap1DjNzc2cMDY2dr++vu4Rf+uGm2SFbHnB0/nlPqSi2pkzoGZxOp1cgMbA3cbGhldQdEPqVlzr
-        L8Qx8o0+SSUFoDZvbGzkAqyhoYHmDAWRMhFB8ka+0W9paTHXgG4RtXh9fb0E9Mf95uZm1SCV1lAdTLeI
-        +oBa3G63cwGTjyB36ExJLmo+ksvhcJj4uATmPkDDNNE0tNlsXEDySa69vT0pk6OjIyv0zhv5VAN0cmlU
-        QKKaSCSiic2qAr3yG9yf5cCo+UXaG3hPaMTSsCPDRLxGqqZTV/CN79U4DPUxj2sypGmBbrciyKsDoEm/
-        Yy/5g0OG7q3D9/hmeHj4gcYudeRLQBN0cHDwEbp/qDQBJBsfH6/FSdwgB14CXBIP1jz/0f/3pih/AE14
-        DNGAsHqSAAAAAElFTkSuQmCC
-</value>
   </data>
   <data name="btnAdaugaContBancar.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -3508,8 +3505,8 @@
   <data name="&gt;&gt;lblSoldRon.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;conturileMeleToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Sold curent RON:</value>
   </data>
   <data name="&gt;&gt;conturileMeleToolStripMenuItem.Name" xml:space="preserve">
     <value>conturileMeleToolStripMenuItem</value>
@@ -3581,6 +3578,9 @@
   <data name="menuStrip1.Text" xml:space="preserve">
     <value>menuStrip1</value>
   </data>
+  <data name="lblSalutare.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
@@ -3632,14 +3632,14 @@
   <data name="btnAdaugaSoldInCont.Size" type="System.Drawing.Size, System.Drawing">
     <value>240, 48</value>
   </data>
-  <data name="meniuToolStripMenuItem.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopCenter</value>
+  <data name="lblSoldEuro.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
   </data>
   <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="administratorToolStripMenuItem.Text" xml:space="preserve">
-    <value>Administrator</value>
+  <data name="btnExtrageSold.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
   </data>
   <data name="&gt;&gt;operatiuniToolStripMenuItem.Name" xml:space="preserve">
     <value>operatiuniToolStripMenuItem</value>
