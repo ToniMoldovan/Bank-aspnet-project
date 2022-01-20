@@ -135,5 +135,20 @@ namespace Banca_v5
             Trace.WriteLine("Iesire form autentificare.");
             Trace.Flush();
         }
+
+        private void btnRomana_Click(object sender, EventArgs e)
+        {
+            var changeLanguage = new ChangeLanguage();
+            changeLanguage.UpdateConfig("language","ro");
+            Application.Restart();
+
+        }
+
+        private void btnEngleza_Click(object sender, EventArgs e)
+        {
+            var changeLanguage = new ChangeLanguage();
+            changeLanguage.UpdateConfig("language", "en");
+            Application.Restart();
+        }
     }
 }

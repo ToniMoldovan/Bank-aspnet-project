@@ -44,6 +44,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -56,7 +57,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controllers\InsideHandler.cs" />
+    <Compile Include="ChangeLanguage.cs" />
     <Compile Include="Models\ContBancar.cs" />
     <Compile Include="Models\DbHandler.cs" />
     <Compile Include="Models\Hash.cs" />
@@ -108,6 +109,9 @@
     </Compile>
     <EmbeddedResource Include="Views\AfisareClientiForm.resx">
       <DependentUpon>AfisareClientiForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Form1.en.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
