@@ -84,9 +84,6 @@ namespace Banca_v5.Views
             this.Controls.Add(this.btnEliminareCont);
             this.Controls.Add(this.txtBoxCont);
             this.Controls.Add(this.label1);
-            this.Font = new System.Drawing.Font("Gadugi", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "StergContBancForm";
             ((System.ComponentModel.ISupportInitialize)(this.dgvConturi)).EndInit();

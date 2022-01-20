@@ -2719,20 +2719,26 @@
         BwAA4AcAAOAPAADgDwAA4B8AAPA/AAD//wAA
 </value>
   </data>
+  <data name="txtBoxPrenume.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 30</value>
+  </data>
   <data name="txtBoxParola.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
   </data>
   <data name="&gt;&gt;label3.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
-  </data>
   <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
     <value>Gadugi, 10.2pt, style=Bold</value>
   </data>
   <data name="&gt;&gt;txtBoxEmail.Name" xml:space="preserve">
     <value>txtBoxEmail</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnInregistrare.Location" type="System.Drawing.Point, System.Drawing">
+    <value>128, 512</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
@@ -2746,9 +2752,6 @@
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
     <value>112, 160</value>
-  </data>
-  <data name="&gt;&gt;txtBoxParola.ZOrder" xml:space="preserve">
-    <value>8</value>
   </data>
   <data name="&gt;&gt;txtBoxEmail.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -2765,8 +2768,8 @@
   <data name="&gt;&gt;txtBoxPrenume.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 20</value>
+  <data name="&gt;&gt;txtBoxNume.Name" xml:space="preserve">
+    <value>txtBoxNume</value>
   </data>
   <data name="&gt;&gt;txtBoxUsername.Name" xml:space="preserve">
     <value>txtBoxUsername</value>
@@ -2788,6 +2791,9 @@
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="&gt;&gt;txtBoxNume.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="btnInregistrare.Font" type="System.Drawing.Font, System.Drawing">
     <value>Gadugi, 10.2pt, style=Bold</value>
@@ -2831,9 +2837,6 @@
   <data name="&gt;&gt;txtBoxUsername.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>96, 16</value>
-  </data>
   <data name="&gt;&gt;txtBoxParola.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -2873,8 +2876,8 @@
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>112, 80</value>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>InregistrareForm</value>
   </data>
   <data name="&gt;&gt;label4.Name" xml:space="preserve">
     <value>label4</value>
@@ -2888,6 +2891,9 @@
   <data name="&gt;&gt;txtBoxUsername.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 20</value>
+  </data>
   <data name="txtBoxEmail.Size" type="System.Drawing.Size, System.Drawing">
     <value>224, 30</value>
   </data>
@@ -2897,20 +2903,17 @@
   <data name="label5.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
   </data>
-  <data name="&gt;&gt;txtBoxNume.Name" xml:space="preserve">
-    <value>txtBoxNume</value>
-  </data>
   <data name="label3.Text" xml:space="preserve">
     <value>Nume utilizator</value>
-  </data>
-  <data name="label5.Text" xml:space="preserve">
-    <value>Prenume</value>
   </data>
   <data name="txtBoxPrenume.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
   </data>
   <data name="&gt;&gt;label4.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="label6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Gadugi, 10.2pt, style=Bold</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
     <value>7</value>
@@ -2930,6 +2933,9 @@
   <data name="&gt;&gt;label2.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="txtBoxEmail.MaxLength" type="System.Int32, mscorlib">
     <value>30</value>
   </data>
@@ -2945,17 +2951,11 @@
   <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Gadugi, 10.2pt, style=Bold</value>
   </data>
-  <data name="&gt;&gt;label5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="txtBoxPrenume.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 30</value>
-  </data>
-  <data name="label6.Text" xml:space="preserve">
-    <value>Email</value>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
   </data>
   <data name="&gt;&gt;txtBoxParola.Parent" xml:space="preserve">
     <value>$this</value>
@@ -2963,14 +2963,11 @@
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Prenume</value>
   </data>
   <data name="&gt;&gt;txtBoxEmail.Parent" xml:space="preserve">
     <value>$this</value>
-  </data>
-  <data name="txtBoxNume.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 30</value>
   </data>
   <data name="txtBoxUsername.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -2978,8 +2975,8 @@
   <data name="&gt;&gt;txtBoxPrenume.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label6.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Gadugi, 10.2pt, style=Bold</value>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>96, 16</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Inregistrare</value>
@@ -2996,14 +2993,17 @@
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;txtBoxNume.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 80</value>
   </data>
   <data name="&gt;&gt;txtBoxUsername.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
     <value>112, 400</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>59, 20</value>
@@ -3023,8 +3023,8 @@
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>53, 20</value>
   </data>
-  <data name="btnInregistrare.Location" type="System.Drawing.Point, System.Drawing">
-    <value>128, 512</value>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Email</value>
   </data>
   <data name="txtBoxPrenume.MaxLength" type="System.Int32, mscorlib">
     <value>30</value>
@@ -3035,8 +3035,8 @@
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>432, 653</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>InregistrareForm</value>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="txtBoxEmail.Location" type="System.Drawing.Point, System.Drawing">
     <value>112, 272</value>
@@ -3047,11 +3047,11 @@
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;txtBoxParola.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
-  <data name="&gt;&gt;label6.Name" xml:space="preserve">
-    <value>label6</value>
+  <data name="txtBoxNume.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 30</value>
   </data>
   <data name="&gt;&gt;txtBoxParola.Name" xml:space="preserve">
     <value>txtBoxParola</value>

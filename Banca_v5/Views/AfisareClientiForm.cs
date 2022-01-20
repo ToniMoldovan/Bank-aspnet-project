@@ -40,5 +40,7 @@ namespace Banca_v5.Views
 
             dgvClienti.DataSource = dataGridViewActualizat.DataSource;
         }
+
+       
     }
 }
