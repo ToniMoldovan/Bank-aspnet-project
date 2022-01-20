@@ -100,9 +100,16 @@ namespace Banca_v5
 
                 if (rezultat)
                 {
+
+                    Utilizator utilizator = dbHandler.GetUtilizator(username);
+
+                    PrincipalForm principalForm = new PrincipalForm(utilizator.Nume, utilizator.Id);
+
                     Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
                     Trace.WriteLine($"Autentificare cu succes {username}.");
+
                     MessageBox.Show("Autentificare cu succes!", "Succes", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    principalForm.Show();
                     this.Visible = false;
                 }
                 else

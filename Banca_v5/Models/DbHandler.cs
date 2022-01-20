@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Diagnostics;
+using System.Windows.Forms;
 
 namespace Banca_v5.Models
 {
@@ -66,6 +67,40 @@ namespace Banca_v5.Models
             return true;
         }
 
+        /*Getter implementat de Toni - in caz de bug-uri*/
+        public Utilizator GetUtilizator(string username)
+        {
+            Utilizator utilizator = (from u in utiliz.Utilizatori
+                                     where u.UserName == username
+                                     select u).FirstOrDefault();
+
+            if (utilizator != null)
+            {
+                return utilizator;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        //Supraincarcare functie
+        public Utilizator GetUtilizator(int id)
+        {
+            Utilizator utilizator = (from u in utiliz.Utilizatori
+                                     where u.Id == id
+                                     select u).FirstOrDefault();
+
+            if (utilizator != null)
+            {
+                return utilizator;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
         public bool CreareTranzactie(int idcontexpeditor, int idcontdestinatar, double suma, string moneda)
         {
             Trace.WriteLine(DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm:ss:fff tt"));
@@ -91,6 +126,88 @@ namespace Banca_v5.Models
             Trace.WriteLine($"Tranzactia dintre expeditorul {idcontexpeditor} si destinatarul {idcontdestinatar} cu suma de {suma} {moneda} a avut loc cu succes");
             Trace.WriteLine("iesiere din metoda creare tranzactie.\n");
             return true;
+        }
+
+        public DataGridView ActualizareClienti()
+        {
+            try
+            {
+                var rez = (from u in utiliz.Utilizatori
+                           select u);
+
+                DataGridView dataGridView = new DataGridView();
+                dataGridView.DataSource = rez.ToList();
+
+                return dataGridView;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Eroare la db: {ex}");
+            }
+
+            return null;
+        }
+
+        public DataGridView ActualizareTranzactiiGlobale()
+        {
+            try
+            {
+                var rez = (from t in tranz.Tranzactii
+                           select t);
+
+                DataGridView dataGridView = new DataGridView();
+                dataGridView.DataSource = rez.ToList();
+
+                return dataGridView;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Eroare la db: {ex}");
+            }
+
+            return null;
+        }
+
+        public DataGridView ActualizareTranzUtilPrimite(int idCont)
+        {
+            try
+            {
+                var rez = (from t in tranz.Tranzactii
+                           where t.IdContDestinatar == idCont
+                           select t);
+
+                DataGridView dataGridView = new DataGridView();
+                dataGridView.DataSource = rez.ToList();
+
+                return dataGridView;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Eroare la db: {ex}");
+            }
+
+            return null;
+        }
+
+        public DataGridView ActualizareTranzUtilTrimise(int idCont)
+        {
+            try
+            {
+                var rez = (from t in tranz.Tranzactii
+                           where t.IdContExpeditor == idCont
+                           select t);
+
+                DataGridView dataGridView = new DataGridView();
+                dataGridView.DataSource = rez.ToList();
+
+                return dataGridView;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Eroare la db: {ex}");
+            }
+
+            return null;
         }
 
         public bool VerificareDateUtilizator(string username, string parola)
