@@ -37,6 +37,7 @@ namespace Banca_v5.Views
             this.operatiuniToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tranzactiileMeleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.conturileMeleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.trimiteBaniToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.administratorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tranzactiiGlobaleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clientiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -51,7 +52,6 @@ namespace Banca_v5.Views
             this.label2 = new System.Windows.Forms.Label();
             this.lblSoldEuro = new System.Windows.Forms.Label();
             this.lblSoldRon = new System.Windows.Forms.Label();
-            this.trimiteBaniToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelUser.SuspendLayout();
@@ -107,6 +107,12 @@ namespace Banca_v5.Views
             resources.ApplyResources(this.conturileMeleToolStripMenuItem, "conturileMeleToolStripMenuItem");
             this.conturileMeleToolStripMenuItem.Name = "conturileMeleToolStripMenuItem";
             // 
+            // trimiteBaniToolStripMenuItem
+            // 
+            resources.ApplyResources(this.trimiteBaniToolStripMenuItem, "trimiteBaniToolStripMenuItem");
+            this.trimiteBaniToolStripMenuItem.Name = "trimiteBaniToolStripMenuItem";
+            this.trimiteBaniToolStripMenuItem.Click += new System.EventHandler(this.trimiteBaniToolStripMenuItem_Click);
+            // 
             // administratorToolStripMenuItem
             // 
             resources.ApplyResources(this.administratorToolStripMenuItem, "administratorToolStripMenuItem");
@@ -119,16 +125,12 @@ namespace Banca_v5.Views
             // 
             resources.ApplyResources(this.tranzactiiGlobaleToolStripMenuItem, "tranzactiiGlobaleToolStripMenuItem");
             this.tranzactiiGlobaleToolStripMenuItem.Name = "tranzactiiGlobaleToolStripMenuItem";
-            this.tranzactiiGlobaleToolStripMenuItem.Size = new System.Drawing.Size(210, 26);
-            this.tranzactiiGlobaleToolStripMenuItem.Text = "Tranzactii globale";
             this.tranzactiiGlobaleToolStripMenuItem.Click += new System.EventHandler(this.tranzactiiGlobaleToolStripMenuItem_Click);
             // 
             // clientiToolStripMenuItem
             // 
             resources.ApplyResources(this.clientiToolStripMenuItem, "clientiToolStripMenuItem");
             this.clientiToolStripMenuItem.Name = "clientiToolStripMenuItem";
-            this.clientiToolStripMenuItem.Size = new System.Drawing.Size(210, 26);
-            this.clientiToolStripMenuItem.Text = "Clienti";
             this.clientiToolStripMenuItem.Click += new System.EventHandler(this.clientiToolStripMenuItem_Click);
             // 
             // lblSalutare
@@ -157,13 +159,9 @@ namespace Banca_v5.Views
             // 
             // btnExtrageSold
             // 
+            resources.ApplyResources(this.btnExtrageSold, "btnExtrageSold");
             this.btnExtrageSold.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnExtrageSold.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExtrageSold.Location = new System.Drawing.Point(288, 144);
             this.btnExtrageSold.Name = "btnExtrageSold";
-            this.btnExtrageSold.Size = new System.Drawing.Size(240, 48);
-            this.btnExtrageSold.TabIndex = 7;
-            this.btnExtrageSold.Text = "Extrage sold din cont";
             this.btnExtrageSold.UseVisualStyleBackColor = true;
             this.btnExtrageSold.Click += new System.EventHandler(this.btnExtrageSold_Click);
             // 
@@ -185,22 +183,11 @@ namespace Banca_v5.Views
             // 
             // btnAdaugaContBancar
             // 
-            this.btnAdaugaContBancar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAdaugaContBancar.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdaugaContBancar.Location = new System.Drawing.Point(16, 64);
-            this.btnAdaugaContBancar.Name = "btnAdaugaContBancar";
-            this.btnAdaugaContBancar.Size = new System.Drawing.Size(240, 48);
-            this.btnAdaugaContBancar.TabIndex = 4;
-            this.btnAdaugaContBancar.Text = "Adauga cont bancar";
-            this.btnAdaugaContBancar.UseVisualStyleBackColor = true;
-            this.btnAdaugaContBancar.Click += new System.EventHandler(this.btnAdaugaContBancar_Click);
-            // 
-            // btnAdaugaContBancar
-            // 
             resources.ApplyResources(this.btnAdaugaContBancar, "btnAdaugaContBancar");
             this.btnAdaugaContBancar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAdaugaContBancar.Name = "btnAdaugaContBancar";
             this.btnAdaugaContBancar.UseVisualStyleBackColor = true;
+            this.btnAdaugaContBancar.Click += new System.EventHandler(this.btnAdaugaContBancar_Click);
             // 
             // label1
             // 
@@ -221,17 +208,6 @@ namespace Banca_v5.Views
             // 
             resources.ApplyResources(this.lblSoldRon, "lblSoldRon");
             this.lblSoldRon.Name = "lblSoldRon";
-            this.lblSoldRon.Size = new System.Drawing.Size(25, 21);
-            this.lblSoldRon.TabIndex = 10;
-            this.lblSoldRon.Text = "...";
-            // 
-            // trimiteBaniToolStripMenuItem
-            // 
-            this.trimiteBaniToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("trimiteBaniToolStripMenuItem.Image")));
-            this.trimiteBaniToolStripMenuItem.Name = "trimiteBaniToolStripMenuItem";
-            this.trimiteBaniToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.trimiteBaniToolStripMenuItem.Text = "Trimite bani";
-            this.trimiteBaniToolStripMenuItem.Click += new System.EventHandler(this.trimiteBaniToolStripMenuItem_Click);
             // 
             // PrincipalForm
             // 

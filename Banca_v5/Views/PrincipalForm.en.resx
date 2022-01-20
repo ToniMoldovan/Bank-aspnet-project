@@ -146,9 +146,6 @@
         hlvMZsPF0By9VBDUdfXnNx/1fxATk78AerxLaoy5z/oAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="copyrightsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 26</value>
-  </data>
   <data name="iesireToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAxFJREFUSEvF
@@ -168,14 +165,11 @@
         DNGAsHqSAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="iesireToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 26</value>
-  </data>
   <data name="iesireToolStripMenuItem.Text" xml:space="preserve">
     <value>Exit</value>
   </data>
   <data name="meniuToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 24</value>
+    <value>60, 26</value>
   </data>
   <data name="meniuToolStripMenuItem.Text" xml:space="preserve">
     <value>Menu</value>
@@ -196,7 +190,7 @@
 </value>
   </data>
   <data name="tranzactiileMeleToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 26</value>
+    <value>195, 26</value>
   </data>
   <data name="tranzactiileMeleToolStripMenuItem.Text" xml:space="preserve">
     <value>My transactions</value>
@@ -229,13 +223,38 @@
 </value>
   </data>
   <data name="conturileMeleToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 26</value>
+    <value>195, 26</value>
   </data>
   <data name="conturileMeleToolStripMenuItem.Text" xml:space="preserve">
     <value>My accounts</value>
   </data>
+  <data name="trimiteBaniToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        xAAADsQBlSsOGwAAA6FJREFUSEtjGAXYgJCciqqiuUMFlEsdwCsmKSBnZJ1mGxZzVN8n8p++T8QpqBT5
+        gIOXn1lS09DTwj9sRXNvxbdFS5r/u8Ym/ps0vfa/ipVLM1QZ6UBYUU1Hw8GzO6c6/9nOrd3/vz1Z+A9k
+        uGNUwv8Zc+r/bd7Q+V9MVdsWqpw4wCchIypvYpsXkpF6duHipn+vbs/99+fF4n8fH8z/V9FS8i8yJ+Nf
+        /9QasFhla8lHTn4hVqhW3ACoiE1K2zjQNiRyQ9ekqp/Xz0z7DzLg78slYPoakJ9YlP0/v7bwX2tfBUgM
+        LG4XGrkeagR2IKmiZaLn4jO5qKHw9f5dvf9+Plv0H2QozGCQQWvXtP9LABpe21H2v7a99N/v54vB8tdO
+        T/snZ2iVCTUKAYSl5aXULR3LorPSrsyeU/fv2skp/z7enwf2MjL++njhv8bu8n+FdYX/gBH7r7SpCOQA
+        uPzcBY3/BGUUlaHGQoCxV+i6ho7SP8f39v1/dGnG/4cXp/8D0SD8+uYcuOvuXZzxP6U0519Lb8X/9v7K
+        f3m1BaAIhgcbCAPlb0ONRQAxRVVNz+jYwxvXtv0DGY6On16d+W/rps5/cQVZ/yZMq/3XNbHqX2Zl3r/P
+        Dxeg+O7LowX/dJy9p0KNRQWsHJyMqma26UW1+e8vH5sE98Hdc9P+1XeU/s+uyv8/ZWbd/57J1f9SS3P/
+        v783H+5qmA8O7u77L6ll6A81EjsQlJSRtPEPWbVgfsO/Mwcn/E8uzv7X0FX+f+qs+v99U2v+x+Zn/Xtx
+        cw5KsMDYHRMqf/GISvBCjcIP5PVMfYC58hvQ0H8gw4FB8z8mL/P/2UMT/j25MvP/V2BwoFvgm5R4EKqd
+        OGAfEXsMGCz/QDgoPe0fMBHA4wUYfP/e3oFkNhB+cm32P2ABVw3VShxQs3WbPHF67b/mnor/Aamp/wtr
+        8v9fOzkZHD9QS/4/uzbr/4+nC/+tXt32X0RJwwSqlTggrWOSUN9Z/i+pOOc/MPv/N/MP3+cRHXN437Zu
+        lKQM8k1+Tf5rdl5+JqhW4oCgrJJuVlX+v+CMtH9ucYmP+cSlRdm5eVkMnL26Zs6q/QsLrvsXpv8DJozl
+        UG3EAw4+ARa3uKSvJoHRvyQ0DayhwmCgYGDmV1Cd/+7G6Sn/92zt+qdoaJ4AlSIN6HiGHVeydC6EclGA
+        sKyiom98/Oni2oJ/QtLy0lBh0oCIoroRlIkVcPLys6ua22dAucMOMDAAAA1uXv4cM/zxAAAAAElFTkSu
+        QmCC
+</value>
+  </data>
+  <data name="trimiteBaniToolStripMenuItem.Text" xml:space="preserve">
+    <value>Trimite bani</value>
+  </data>
   <data name="operatiuniToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 24</value>
+    <value>96, 26</value>
   </data>
   <data name="operatiuniToolStripMenuItem.Text" xml:space="preserve">
     <value>Operations</value>
@@ -260,8 +279,8 @@
         AABJRU5ErkJggg==
 </value>
   </data>
-  <data name="tranzactiiGlobaleToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 26</value>
+  <data name="tranzactiiGlobaleToolStripMenuItem.Text" xml:space="preserve">
+    <value>Tranzactii globale</value>
   </data>
   <data name="clientiToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -281,9 +300,6 @@
         lloSm7KvLsFPgKCoM2W5F3wOzv7tl+NS1N/lnbfj0/fUrvARJCDoZbkXfJazL60qYepHP/Btyo1N2l2T
         WLWrJtFDgOAs8R0Pf2NzwVLxbwtjvwA/+5RigFXO7QAAAABJRU5ErkJggg==
 </value>
-  </data>
-  <data name="clientiToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 26</value>
   </data>
   <data name="administratorToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -311,11 +327,17 @@
         X4KQkH8BP/CuDfn866IAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="administratorToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 26</value>
+  </data>
+  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>902, 30</value>
+  </data>
   <data name="lblSalutare.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 21</value>
+    <value>62, 21</value>
   </data>
   <data name="lblSalutare.Text" xml:space="preserve">
-    <value>Hay,</value>
+    <value>Hello,</value>
   </data>
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -630,8 +652,8 @@
         31mnUcNGf1MDV6vW/wDyxI0WD1REVAAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="btnExtrageSold.Text" xml:space="preserve">
-    <value>Withdraw balance from account</value>
+  <data name="btnExtrageSold.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Gadugi, 10.2pt, style=Bold</value>
   </data>
   <data name="btnStergeContBancar.Text" xml:space="preserve">
     <value>Delete bank account</value>
@@ -642,6 +664,12 @@
   <data name="btnAdaugaContBancar.Text" xml:space="preserve">
     <value>Add bank account</value>
   </data>
+  <data name="panelUser.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 144</value>
+  </data>
+  <data name="panelUser.Size" type="System.Drawing.Size, System.Drawing">
+    <value>902, 260</value>
+  </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>209, 21</value>
   </data>
@@ -649,7 +677,7 @@
     <value>EURO current balance:</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 21</value>
+    <value>173, 20</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>RON current balance:</value>

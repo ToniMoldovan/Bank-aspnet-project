@@ -94,5 +94,10 @@ namespace Banca_v5.Views
                 }
             }
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
