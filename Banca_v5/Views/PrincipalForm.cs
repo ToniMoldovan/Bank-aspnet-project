@@ -107,6 +107,36 @@ namespace Banca_v5.Views
 
         }
 
+        private void btnAdaugaContBancar_Click(object sender, EventArgs e)
+        {
+            AdaugContBancForm adaugCont = new AdaugContBancForm();
+            adaugCont.ShowDialog();
+        }
+
+        private void btnStergeContBancar_Click(object sender, EventArgs e)
+        {
+            StergContBancForm stergContBanc = new StergContBancForm(idUtil);
+            stergContBanc.ShowDialog();
+        }
+
+        private void btnAdaugaSoldInCont_Click(object sender, EventArgs e)
+        {
+            AdaugSoldContForm adaugSoldCont = new AdaugSoldContForm(idUtil);
+            adaugSoldCont.ShowDialog();
+        }
+
+        private void btnExtrageSold_Click(object sender, EventArgs e)
+        {
+            ExtragSoldContForm extragSoldCont = new ExtragSoldContForm(idUtil);
+            extragSoldCont.ShowDialog();
+        }
+
+        private void trimiteBaniToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
         //Incerc sa creez un ceas
         /*
         System.Windows.Forms.Timer t = null;

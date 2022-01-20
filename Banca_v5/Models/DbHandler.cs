@@ -147,6 +147,27 @@ namespace Banca_v5.Models
             return true;
         }
 
+        public DataGridView ActualizareConturiClient(int idClient)
+        {
+            try
+            {
+                var rez = (from c in cntBnc.ConturiBancare
+                           where c.IdPersoana == idClient
+                           select c);
+
+                DataGridView dataGridView = new DataGridView();
+                dataGridView.DataSource = rez.ToList();
+
+                return dataGridView;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Eroare la db: {ex}");
+            }
+
+            return null;
+        }
+
         public DataGridView ActualizareClienti()
         {
             try
