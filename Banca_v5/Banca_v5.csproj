@@ -181,6 +181,9 @@
     <EmbeddedResource Include="Views\PrincipalForm.resx">
       <DependentUpon>PrincipalForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\PrincipalForm.ro-MD.resx">
+      <DependentUpon>PrincipalForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\PrincipalForm.ro.resx">
       <DependentUpon>PrincipalForm.cs</DependentUpon>
     </EmbeddedResource>
