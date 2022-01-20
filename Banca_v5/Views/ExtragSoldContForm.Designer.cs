@@ -99,6 +99,8 @@ namespace Banca_v5.Views
             this.Controls.Add(this.txtBoxCont);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "ExtragSoldContForm";
             ((System.ComponentModel.ISupportInitialize)(this.dgvConturi)).EndInit();

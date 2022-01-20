@@ -250,6 +250,9 @@
         QmCC
 </value>
   </data>
+  <data name="trimiteBaniToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 26</value>
+  </data>
   <data name="trimiteBaniToolStripMenuItem.Text" xml:space="preserve">
     <value>Trimite bani</value>
   </data>
@@ -327,11 +330,8 @@
         X4KQkH8BP/CuDfn866IAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="administratorToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 26</value>
-  </data>
   <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>902, 30</value>
+    <value>902, 28</value>
   </data>
   <data name="lblSalutare.Size" type="System.Drawing.Size, System.Drawing">
     <value>62, 21</value>
@@ -652,11 +652,17 @@
         31mnUcNGf1MDV6vW/wDyxI0WD1REVAAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="btnExtrageSold.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 144</value>
+  </data>
+  <data name="btnStergeContBancar.Font" type="System.Drawing.Font, System.Drawing">
     <value>Gadugi, 10.2pt, style=Bold</value>
   </data>
   <data name="btnStergeContBancar.Text" xml:space="preserve">
     <value>Delete bank account</value>
+  </data>
+  <data name="btnAdaugaSoldInCont.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Gadugi, 10.2pt, style=Bold</value>
   </data>
   <data name="btnAdaugaSoldInCont.Text" xml:space="preserve">
     <value>Add balance to account</value>
@@ -665,10 +671,10 @@
     <value>Add bank account</value>
   </data>
   <data name="panelUser.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 144</value>
+    <value>0, 288</value>
   </data>
   <data name="panelUser.Size" type="System.Drawing.Size, System.Drawing">
-    <value>902, 260</value>
+    <value>912, 288</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>209, 21</value>
@@ -676,8 +682,11 @@
   <data name="label1.Text" xml:space="preserve">
     <value>EURO current balance:</value>
   </data>
+  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Gadugi, 10.2pt, style=Bold</value>
+  </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>173, 20</value>
+    <value>180, 20</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>RON current balance:</value>

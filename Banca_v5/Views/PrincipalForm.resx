@@ -150,7 +150,7 @@
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="lblSoldRon.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+    <value>240, 192</value>
   </data>
   <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
     <value>5</value>
@@ -532,8 +532,8 @@
   <data name="btnStergeContBancar.Text" xml:space="preserve">
     <value>Sterge cont bancar</value>
   </data>
-  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>720, 32</value>
+  <data name="&gt;&gt;lblSalutare.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="lblSoldEuro.Text" xml:space="preserve">
     <value>...</value>
@@ -3237,6 +3237,9 @@
         AABJRU5ErkJggg==
 </value>
   </data>
+  <data name="btnExtrageSold.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
   <data name="copyrightsToolStripMenuItem.Text" xml:space="preserve">
     <value>Copyright</value>
   </data>
@@ -3296,9 +3299,6 @@
         WtZ+F04wt+FipxM0BguQ16i/qqrqS/rT/0ZBQcH7pBsJ+ZfOOOz2gEwmY8h379Hb/x8JCQnvJCcnv00v
         X4KQkH8BP/CuDfn866IAAAAASUVORK5CYII=
 </value>
-  </data>
-  <data name="&gt;&gt;lblSalutare.ZOrder" xml:space="preserve">
-    <value>5</value>
   </data>
   <data name="&gt;&gt;btnAdaugaContBancar.Name" xml:space="preserve">
     <value>btnAdaugaContBancar</value>
@@ -3374,6 +3374,9 @@
   </data>
   <data name="meniuToolStripMenuItem.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>None</value>
+  </data>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>720, 32</value>
   </data>
   <data name="lblSoldEuro.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -3451,9 +3454,6 @@
   <data name="btnAdaugaSoldInCont.Location" type="System.Drawing.Point, System.Drawing">
     <value>288, 64</value>
   </data>
-  <data name="lblSoldRon.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="&gt;&gt;btnAdaugaSoldInCont.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
@@ -3463,8 +3463,8 @@
   <data name="&gt;&gt;btnAdaugaSoldInCont.Name" xml:space="preserve">
     <value>btnAdaugaSoldInCont</value>
   </data>
-  <data name="btnExtrageSold.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+  <data name="lblSoldRon.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="copyrightsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>157, 26</value>
@@ -3576,7 +3576,7 @@
     <value>lblSoldEuro</value>
   </data>
   <data name="trimiteBaniToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>195, 26</value>
+    <value>224, 26</value>
   </data>
   <data name="menuStrip1.Text" xml:space="preserve">
     <value>menuStrip1</value>
