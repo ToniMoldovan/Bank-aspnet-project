@@ -150,6 +150,9 @@
     <EmbeddedResource Include="Views\AdaugSoldContForm.resx">
       <DependentUpon>AdaugSoldContForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\AfisareClientiForm.en.resx">
+      <DependentUpon>AfisareClientiForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\AfisareClientiForm.resx">
       <DependentUpon>AfisareClientiForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -224,6 +227,9 @@
       <DependentUpon>VerificareAdminForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\VerificareAdminForm.resx">
+      <DependentUpon>VerificareAdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\VerificareAdminForm.ro.resx">
       <DependentUpon>VerificareAdminForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="ClassDiagram1.cd" />

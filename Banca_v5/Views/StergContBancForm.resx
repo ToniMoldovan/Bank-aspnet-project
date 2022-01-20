@@ -127,6 +127,9 @@
   <data name="label2.Text" xml:space="preserve">
     <value>ID cont pe care doresti sa il elimini</value>
   </data>
+  <data name="&gt;&gt;txtBoxCont.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Gadugi, 10.2pt, style=Bold</value>
@@ -137,38 +140,29 @@
   <data name="&gt;&gt;txtBoxCont.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;txtBoxCont.Name" xml:space="preserve">
-    <value>txtBoxCont</value>
-  </data>
-  <data name="txtBoxCont.MaxLength" type="System.Int32, mscorlib">
-    <value>30</value>
-  </data>
-  <data name="dgvConturi.TabIndex" type="System.Int32, mscorlib">
-    <value>44</value>
-  </data>
-  <data name="&gt;&gt;btnEliminareCont.Parent" xml:space="preserve">
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Gadugi, 10.2pt, style=Bold</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Sterge cont</value>
   </data>
-  <data name="txtBoxCont.TabIndex" type="System.Int32, mscorlib">
-    <value>35</value>
+  <data name="&gt;&gt;dgvConturi.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>287, 20</value>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
     <value>32, 304</value>
+  </data>
+  <data name="btnEliminareCont.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 416</value>
   </data>
   <data name="txtBoxCont.Size" type="System.Drawing.Size, System.Drawing">
     <value>224, 31</value>
   </data>
   <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Impact, 19.8pt</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>717, 551</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>StergContBancForm</value>
@@ -179,26 +173,29 @@
   <data name="&gt;&gt;label2.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Gadugi, 10.8pt, style=Bold</value>
+  </data>
   <data name="label4.TabIndex" type="System.Int32, mscorlib">
     <value>45</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
     <value>256, 32</value>
   </data>
-  <data name="txtBoxCont.Location" type="System.Drawing.Point, System.Drawing">
-    <value>32, 336</value>
-  </data>
   <data name="&gt;&gt;label2.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dgvConturi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>656, 144</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="btnEliminareCont.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Gadugi, 10.2pt, style=Bold</value>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>717, 551</value>
   </data>
   <data name="&gt;&gt;dgvConturi.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -213,9 +210,6 @@
   <data name="&gt;&gt;txtBoxCont.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;btnEliminareCont.Name" xml:space="preserve">
-    <value>btnEliminareCont</value>
-  </data>
   <data name="&gt;&gt;label1.Name" xml:space="preserve">
     <value>label1</value>
   </data>
@@ -228,25 +222,25 @@
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>163, 20</value>
   </data>
-  <data name="&gt;&gt;dgvConturi.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="dgvConturi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 128</value>
   </data>
-  <data name="btnEliminareCont.TabIndex" type="System.Int32, mscorlib">
-    <value>37</value>
+  <data name="txtBoxCont.MaxLength" type="System.Int32, mscorlib">
+    <value>30</value>
   </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 96</value>
   </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="txtBoxCont.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>Conturi disponibile</value>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 20</value>
   </data>
-  <data name="&gt;&gt;dgvConturi.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnEliminareCont.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
@@ -255,8 +249,11 @@
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>315, 41</value>
   </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="btnEliminareCont.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Gadugi, 10.2pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;dgvConturi.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;dgvConturi.Name" xml:space="preserve">
     <value>dgvConturi</value>
@@ -264,20 +261,23 @@
   <data name="btnEliminareCont.Size" type="System.Drawing.Size, System.Drawing">
     <value>192, 48</value>
   </data>
-  <data name="dgvConturi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>656, 144</value>
+  <data name="txtBoxCont.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 336</value>
   </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>38</value>
   </data>
-  <data name="btnEliminareCont.Location" type="System.Drawing.Point, System.Drawing">
-    <value>32, 416</value>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
-  <data name="dgvConturi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>32, 128</value>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="btnEliminareCont.Text" xml:space="preserve">
     <value>Elimina cont</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;btnEliminareCont.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -288,26 +288,26 @@
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;txtBoxCont.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Conturi disponibile</value>
   </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="dgvConturi.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
   </data>
-  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Gadugi, 10.8pt, style=Bold</value>
+  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Gadugi, 10.2pt, style=Bold</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Sterge cont</value>
+  <data name="&gt;&gt;txtBoxCont.Name" xml:space="preserve">
+    <value>txtBoxCont</value>
   </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="btnEliminareCont.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
   </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>32, 96</value>
+  <data name="&gt;&gt;btnEliminareCont.Name" xml:space="preserve">
+    <value>btnEliminareCont</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
