@@ -64,11 +64,29 @@
     <Compile Include="Models\Hash.cs" />
     <Compile Include="Models\Tranzactie.cs" />
     <Compile Include="Models\Utilizator.cs" />
+    <Compile Include="Views\AdaugContBancForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AdaugContBancForm.Designer.cs">
+      <DependentUpon>AdaugContBancForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AdaugSoldContForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AdaugSoldContForm.Designer.cs">
+      <DependentUpon>AdaugSoldContForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\AfisareClientiForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\AfisareClientiForm.Designer.cs">
       <DependentUpon>AfisareClientiForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ExtragSoldContForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ExtragSoldContForm.Designer.cs">
+      <DependentUpon>ExtragSoldContForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Form1.cs">
       <SubType>Form</SubType>
@@ -90,6 +108,12 @@
     <Compile Include="Views\PrincipalForm.Designer.cs">
       <DependentUpon>PrincipalForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\StergContBancForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\StergContBancForm.Designer.cs">
+      <DependentUpon>StergContBancForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\TranzactiiGlobaleForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,14 +126,23 @@
     <Compile Include="Views\TranzactiiUtilizatorForm.Designer.cs">
       <DependentUpon>TranzactiiUtilizatorForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\TrimiteBaniForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\TrimiteBaniForm.Designer.cs">
+      <DependentUpon>TrimiteBaniForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\VerificareAdminForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\VerificareAdminForm.Designer.cs">
       <DependentUpon>VerificareAdminForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Views\AfisareClientiForm.en.resx">
-      <DependentUpon>AfisareClientiForm.cs</DependentUpon>
+    <EmbeddedResource Include="Views\AdaugContBancForm.resx">
+      <DependentUpon>AdaugContBancForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AdaugSoldContForm.resx">
+      <DependentUpon>AdaugSoldContForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\AfisareClientiForm.resx">
       <DependentUpon>AfisareClientiForm.cs</DependentUpon>

@@ -128,6 +128,46 @@ namespace Banca_v5.Models
         //    return true;
         //}
 
+        /*Adaugare cont bancar - TONI MODIFICA AICI*/
+        public bool AdaugareContBancar(int idPers, string IBAN, int pin, double suma, string moneda)
+        {
+            var existaDeja = (from c in cntBnc.ConturiBancare
+                              where c.IdPersoana == idPers
+                              select c).ToList();
+
+            foreach (var item in existaDeja)
+            {
+                if (item.Moneda == moneda)
+                {
+                    // nu mai paote
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
+        public DataGridView ActualizareConturiClient(int idClient)
+        {
+            try
+            {
+                var rez = (from c in cntBnc.ConturiBancare
+                           where c.IdPersoana == idClient
+                           select c);
+
+                DataGridView dataGridView = new DataGridView();
+                dataGridView.DataSource = rez.ToList();
+
+                return dataGridView;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Eroare la db: {ex}");
+            }
+
+            return null;
+        }
+
         public DataGridView ActualizareClienti()
         {
             try
